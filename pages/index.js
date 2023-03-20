@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { BsFillMoonStarsFill } from 'react-icons/bs'
+import Head from 'next/head';
+import Image from 'next/image';
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { MdDeveloperMode, MdWork, MdMenuBook } from 'react-icons/md';
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -21,14 +22,37 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10 md:px-20 lg:px-40">
+      <nav className="py-3 lg:mb-12 flex justify-end lg:pr-5 bg-gray-600" >
+        <ul class="hidden space-x-8 lg:flex text-white">
+          <li class="mr-6">
+            <a class="text-xl lg:text-2xl" href="#">HOME</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-xl lg:text-2xl" href="#">ABOUT</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-xl lg:text-2xl" href="#">WORK</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-xl lg:text-2xl" href="#">CONTACT</a>
+          </li>
+        </ul>
+        <div class="flex pr-2 lg:hidden">
+          <div class="space-y-2">
+            <span class="block w-8 h-0.5 bg-white animate-pulse"></span>
+            <span class="block w-8 h-0.5 bg-white animate-pulse"></span>
+            <span class="block w-8 h-0.5 bg-white animate-pulse"></span>
+          </div>
+        </div>
+      </nav>
+      <main className="bg-white px-5 md:px-20 lg:px-40 ">
         <section className="min-h-screen">
           <div className="text-center p-10">
-            <h2 className="text-3xl py-5 md:text-6xl text-red-500 font-bold">Hello World!</h2>
-            <h3 className="text-2xl py-2 md:text-2xl">I'm a web developer, and I love what I do.</h3>
+            <h2 className="text-4xl py-5 md:text-6xl text-red-500 font-bold">Hello World!</h2>
+            <h3 className="text-2xl py-2 md:text-2xl">I'm a web developer. I love to create beautiful and efficient things!</h3>
           </div>
           <div >
-            <Image src={marta} alt="a photo of me" className="w-50 h-50 mx-auto m-10 rounded-full relative overflow-hidden lg:w-80 lg:h-80" />
+            <Image src={marta} alt="a photo of me" className="w-45 h-45 mx-auto m-10 rounded-full relative overflow-hidden lg:w-80 lg:h-80" />
           </div>
           <div className="text-4xl flex justify-center gap-16 py-3 text-gray-600">
             <a href="https://github.com/martalexaa" target="blank"><AiFillGithub /></a>
@@ -50,12 +74,13 @@ export default function Home() {
               I approach every challenge with curiosity and enthusiasm.
               As a team player, I'm eager to learn from and contribute to my colleagues,
               while maintaining a high level of independence and demand for quality in my work.
+              Do you want to know more about me? <a href="#" className="text-red-500">Download my resume</a>.
             </p>
           </div>
         </section>
 
         <section id="dev-skills">
-          <h3 className="text-3xl lg:text-6xl py-20 pt-10 text-center text-red-500 font-bold">My Toolbox</h3>
+          <h3 className="text-4xl lg:text-6xl py-20 pt-10 text-center text-red-500 font-bold">My Toolbox</h3>
           <div className="flex justify-center p-30">
             <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-2/5">
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">html</div>
@@ -65,30 +90,32 @@ export default function Home() {
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">jquery</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">react</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">next.js</div>
+              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">react native</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">tailwind</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">bootstrap</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">sass</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">aws</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">serverless</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">node</div>
+              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">MERN</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">express</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">mongodb</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">sql</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">MERN</div>
+              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">firestore</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">git</div>
+              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">jest</div>
+              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">cucumber</div>
+              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">angular</div>
             </div>
-          </div>
-          <div className="flex justify-center">
-            <div className="m-1 p-2 bg-red-500 text-white uppercase text-xl invisible">download resume</div>
           </div>
         </section>
 
         <section>
           <div className="lg:flex gap-10">
-
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+              <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdDeveloperMode /></div>
               <h3 className="text-lg font-medium pt-8 pb-2  ">
-                I'm a certified developer
+                I am a certified developer
               </h3>
               <p className="py-2">
                 I completed a six-month full-stack web development course, with the guidance of a tutor and mentor,
@@ -98,6 +125,7 @@ export default function Home() {
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+              <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdWork /></div>
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 I have experience
               </h3>
@@ -107,8 +135,8 @@ export default function Home() {
                 I also worked as a customer service agent in e-commerce at a multinational company where I had the chance to be part of a bigger team.
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+              <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdMenuBook /></div>
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 I have a university degree
               </h3>
@@ -120,72 +148,72 @@ export default function Home() {
             </div>
           </div>
           <div>
-
-            <h3 className="text-3xl lg:text-6xl py-20 text-center text-red-500 font-bold ">My Works</h3>
+            <h3 className="text-4xl lg:text-6xl py-20 text-center text-red-500 font-bold px-0 mx-0">My Works</h3>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-red-200">
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-white">
+
+            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-gray-700">
               <Image src={web1}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive" />
-              <p className="pt-2 pb-2 text-gray-600">The Meet App is a serverless, progressive web application (PWA) with React using a
+                alt="a screenshot of my project" />
+              <p className="pt-2 pb-2">The Meet App is a serverless, progressive web application (PWA) with React using a
                 test-driven development (TDD) technique.
                 The application uses the Google Calendar API to fetch upcoming events
                 and allows users to search for a city and get a list of events hosted in that city.</p>
               <div className="flex justify-between px-20">
                 <a href="https://martalexaa.github.io/meet/" target="blank"
-                  className="text-center cursor-pointer text-gray-600 underline">DEMO</a>
+                  className="text-center cursor-pointer  border-2 border-solid border-white px-1">DEMO</a>
                 <a href="https://github.com/martalexaa/meet" target="blank"
-                  className="text-center cursor-pointer text-gray-600 underline">CODE</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-red-200">
+            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-gray-700">
               <Image src={web2}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive" />
-              <p className="pt-2 pb-2 text-gray-600">The Movie App allows users to log in and read information about movies,
+                alt="a screenshot of my project" />
+              <p className="pt-2 pb-2">The Movie App allows users to log in and read information about movies,
                 and add some of them to their favorites.
                 It uses a REST API to handle data and is built using MERN stack technologies, which include MongoDB, Express, React, and Node.js.</p>
               <div className="flex justify-between px-20">
                 <a href="https://martalexaa-movie-app.netlify.app/signup" target="blank"
-                  className="text-center cursor-pointer text-gray-600 underline">DEMO</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1">DEMO</a>
                 <a href="https://github.com/martalexaa/myFlix-client"
                   target="blank"
-                  className="text-center cursor-pointer text-gray-600 underline">CODE</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-red-200">
+            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-gray-700">
               <Image src={web3}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive" />
-              <p className="pt-2 pb-2 text-gray-600">The Pokedex is a small web application created as part of CareerFoundry's Full-Stack Web Development course with HTML, CSS, JavaScript, Bootstrap and jQuery that loads data from an external API and enables the viewing of data points in detail.
-                The goal of this project was to learn basic JavaScript (variables, functions, arrays, DOM interaction, AJAX, Json etc.).
+                alt="a screenshot of my project" />
+              <p className="pt-2 pb-2">The Pokedex is a small web application created as part of CareerFoundry's Full-Stack Web Development
+                course with HTML, CSS, JavaScript, Bootstrap and jQuery that loads data from an external API and enables the viewing of data points in detail.
               </p>
               <div className="flex justify-between px-20">
                 <a href="https://martalexaa.github.io/pokedex-app" target="blank"
-                  className="text-center cursor-pointer text-gray-600 underline">DEMO</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1">DEMO</a>
                 <a href="https://github.com/martalexaa/pokedex-app" target="blank"
-                  className="text-center cursor-pointer text-gray-600 underline">CODE</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-red-200">
+            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-gray-700">
               <Image src={web1}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive" />
-              <p className="pt-2 pb-2 text-gray-600">A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
+                alt="a screenshot of my project" />
+              <p className="pt-2 pb-2 ">A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
                 The application uses the Google Calendar API to fetch upcoming events.
                 This Meet App will allow users to search for a city and get a list of events hosted in that city.</p>
               <div className="flex justify-between px-20">
-                <p className="text-center cursor-pointer text-gray-600 underline">DEMO</p>
-                <p className="text-center cursor-pointer text-gray-600 underline">CODE</p>
+                <p className="text-center cursor-pointer  underline">DEMO</p>
+                <p className="text-center cursor-pointer  underline">CODE</p>
               </div>
             </div>
 
@@ -193,28 +221,30 @@ export default function Home() {
         </section>
 
         <section>
-          <h3 className="text-3xl lg:text-6xl py-20 text-center text-red-500 font-bold ">Contact</h3>
-          <div className="p-30 text-center m-30">
-            <h3 className="text-2xl py-2 md:text-2xl">Are you interested in working with me? Let's get in touch!</h3>
-            <ul className="m-20 text-xl">
-              <li className="mb-3">martalexa@gmail.com</li>
-              <li className="mb-3">Skype: live:martalexa_2</li>
-              <li className="mb-3">+49 1234567</li>
-            </ul>
-            <div className="text-4xl flex justify-center gap-16 py-3 text-gray-600">
-              <a href="https://github.com/martalexaa" target="blank"><AiFillGithub /></a>
-              <a href="https://www.linkedin.com/in/m%C3%A1rta-alexandra-m%C3%B3csai-karaba-a3610b" target="blank"><AiFillLinkedin /></a>
-              <a href="https://twitter.com/MartaKaraba" target="blank"><AiFillTwitterCircle /></a>
+          <div className="">
+            <h3 className="text-4xl lg:text-6xl py-20 text-center text-red-500 font-bold">Contact</h3>
+            <div className="p-30 text-center my-20 h-96">
+              <h3 className="text-3xl lg:text-4xl p-5  text-sky-800 font-medium">Are you interested in working with me? Let's get in touch!</h3>
+              <ul className="my-20 text-xl">
+                <li className="mb-4">martalexa@gmail.com</li>
+                <li className="mb-4">Skype: live:martalexa_2</li>
+                <li className="mb-4">+49 1234567</li>
+              </ul>
+              <div className="text-4xl flex justify-center gap-16 py-3 text-gray-600">
+                <a href="https://github.com/martalexaa" target="blank"><AiFillGithub /></a>
+                <a href="https://www.linkedin.com/in/m%C3%A1rta-alexandra-m%C3%B3csai-karaba-a3610b" target="blank"><AiFillLinkedin /></a>
+                <a href="https://twitter.com/MartaKaraba" target="blank"><AiFillTwitterCircle /></a>
+              </div>
             </div>
           </div>
         </section>
 
-        <footer className="mb-10">
-          <div className="p-30 text-center m-30">
+        <section className="mb-5 ">
+          <div className="p-30 text-center m-30 h-50 relative text-gray-600">
             <p>Created with Next.js and Tailwind CSS by Marta Karaba.</p>
             <a href="#" className="underline">Impressum</a>
           </div>
-        </footer>
+        </section>
       </main>
     </>
   )
