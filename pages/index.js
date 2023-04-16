@@ -12,8 +12,10 @@ import marta from "../public/marta-foto.jpg";
 import web1 from "../public/web-1.jpg";
 import web2 from "../public/web-2.jpg";
 import web3 from "../public/web-3.png";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Link from 'next/link'
+
 import Navbar from "./navbar";
+import Impressum from "./impressum"
 
 export default function Home() {
   return (
@@ -25,42 +27,40 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="bg-white px-5 md:px-20 lg:px-40 ">
-        <section className="min-h-screen text-center p-10" id="home">
+      <main className="bg-white px-2 md:px-20 lg:px-40">
+        <section className="min-h-screen text-center p-5 md:p-4 pt:p-10" id="home">
           <div className="text-center p-10">
-            <h2 className="text-4xl py-10 md:text-6xl text-red-500 font-bold">Hello World!</h2>
-            <h3 className="text-2xl py-2 md:text-2xl">I'm a web developer. I love to create beautiful and functional apps and websites!</h3>
+            <h2 className="text-4xl py-5 md:py-7 lg:py-10 md:text-5xl text-red-500 font-bold">Hello World!</h2>
+            <h3 className="text-xl md:text-2xl">I'm a web developer. I love to create beautiful and functional apps and websites!</h3>
           </div>
           <div >
-            <Image src={marta} alt="a photo of me" className="w-45 h-45 mx-auto m-10 rounded-full relative overflow-hidden lg:w-80 lg:h-80" />
+            <Image src={marta} alt="a photo of me" className="w-52 h-52 mx-auto rounded-full relative overflow-hidden md:w-60 md:h-60 lg:w-80 lg:h-80" />
           </div>
-          <div className="text-4xl flex justify-center gap-16 py-3 text-gray-600">
+          <div className="text-4xl flex justify-center gap-16 pt-7 text-gray-600">
             <a href="https://github.com/martalexaa" target="blank"><AiFillGithub /></a>
-            <a href="https://www.linkedin.com/in/m%C3%A1rta-alexandra-m%C3%B3csai-karaba-a3610b" target="blank"><AiFillLinkedin /></a>
+            <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/" target="blank"><AiFillLinkedin /></a>
             <a href="https://twitter.com/MartaKaraba" target="blank"><AiFillTwitterCircle /></a>
           </div>
         </section>
 
         <section id="about">
           <div className="lg:px-40 text-center pt-6">
+            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">About me</h3>
             <h3 className="text-3xl lg:text-4xl px-5 py-10 text-sky-800 font-medium">My name is Marta. Nice to meet you.</h3>
             <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
-              I'm currently seeking a hybrid full-time position in Berlin or remote work from anywhere.</p>
+              I am currently seeking a hybrid full-time position in Berlin or remote work from anywhere.</p>
             <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
-              My goal is to bring expertise and passion for web development to a team that values collaboration,
-              creativity, and continuous learning.
-              I'm committed to delivering high-quality, maintainable, and efficient code.
-              Dedicated to staying up-to-date with the latest tools and technologies,
-              I approach every challenge with curiosity and enthusiasm.
-              As a team player, I'm eager to learn from and contribute to my colleagues,
-              while maintaining a high level of independence and demand for quality in my work.
-              Do you want to know more about me? <a href="#" className="text-red-500">Download my resume</a>.
+              I am a certified front-end developer with a background in customer service and freelance translation, proficient in HTML, CSS, JavaScript, and TypeScript.
+              My experience includes building beautiful and functional apps using the MERN stack.
+              I am eager to work further to improve my skills and make a positive impact in the world as part of a collaborative team.
+              Curious to learn more about me? <a href="#" className="text-red-500 cursor-pointer underline">Download my resume</a> or keep scrolling.
+
             </p>
           </div>
         </section>
 
         <section id="dev-skills">
-          <h3 className="text-4xl lg:text-6xl py-20 pt-10 text-center text-red-500 font-bold">My Toolbox</h3>
+          <h3 className="text-3xl md:text-4xl py-20 pt-10 text-center text-sky-800 font-bold">My Toolbox</h3>
           <div className="flex justify-center p-30">
             <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-2/5">
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">html</div>
@@ -130,7 +130,7 @@ export default function Home() {
         </section>
         <section id="work">
           <div>
-            <h3 className="text-4xl lg:text-6xl py-20 text-center text-red-500 font-bold px-0 mx-0">My Works</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">My Works</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-white">
 
@@ -204,27 +204,27 @@ export default function Home() {
 
         <section id="contact">
           <div className="">
-            <h3 className="text-4xl lg:text-6xl py-20 text-center text-red-500 font-bold">Contact</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">Contact</h3>
             <div className="p-30 text-center my-20 h-96">
-              <h3 className="text-3xl lg:text-4xl p-5  text-sky-800 font-medium">Are you interested in working with me? Let's get in touch!</h3>
-              <ul className="my-20 text-xl">
-                <li className="mb-4">martalexa@gmail.com</li>
-                <li className="mb-4">Skype: live:martalexa_2</li>
-                <li className="mb-4">+49 1234567</li>
+              <h3 className="text-xl md:text-3xl p-5  text-sky-800 font-medium">Are you interested in working with me? Let's get in touch!</h3>
+              <ul className="py-20 text-xl">
+                <li className="pb-4">martalexa@gmail.com</li>
+                <li className="pb-4">Skype: live:martalexa_2</li>
+                <li className="pb-4">+49 1773271140</li>
               </ul>
-              <div className="text-4xl flex justify-center gap-16 py-3 text-gray-600">
+              <div className="text-4xl py-5 flex justify-center gap-10 md:gap-16 text-gray-600">
                 <a href="https://github.com/martalexaa" target="blank"><AiFillGithub /></a>
-                <a href="https://www.linkedin.com/in/m%C3%A1rta-alexandra-m%C3%B3csai-karaba-a3610b" target="blank"><AiFillLinkedin /></a>
+                <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/" target="blank"><AiFillLinkedin /></a>
                 <a href="https://twitter.com/MartaKaraba" target="blank"><AiFillTwitterCircle /></a>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="mb-5 ">
-          <div className="p-30 text-center m-30 h-50 relative text-gray-600">
-            <p>Created with Next.js and Tailwind CSS by Marta Karaba.</p>
-            <a href="#" className="underline">Impressum</a>
+        <section className="py-5">
+          <div className="text-center text-gray-600">
+            <p className="text-xs">Created with Next.js and Tailwind CSS by Marta Karaba.</p>
+            <Link href="/impressum" className="underline cursor-pointer">Impressum</Link>
           </div>
         </section>
       </main>
