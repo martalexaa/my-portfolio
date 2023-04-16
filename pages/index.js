@@ -12,6 +12,8 @@ import marta from "../public/marta-foto.jpg";
 import web1 from "../public/web-1.jpg";
 import web2 from "../public/web-2.jpg";
 import web3 from "../public/web-3.png";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Navbar from "./navbar";
 
 export default function Home() {
   return (
@@ -22,34 +24,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="py-3 lg:mb-12 flex justify-end lg:pr-5 bg-gray-600" >
-        <ul class="hidden space-x-8 lg:flex text-white">
-          <li class="mr-6">
-            <a class="text-xl lg:text-2xl" href="#">HOME</a>
-          </li>
-          <li class="mr-6">
-            <a class="text-xl lg:text-2xl" href="#">ABOUT</a>
-          </li>
-          <li class="mr-6">
-            <a class="text-xl lg:text-2xl" href="#">WORK</a>
-          </li>
-          <li class="mr-6">
-            <a class="text-xl lg:text-2xl" href="#">CONTACT</a>
-          </li>
-        </ul>
-        <div class="flex pr-2 lg:hidden">
-          <div class="space-y-2">
-            <span class="block w-8 h-0.5 bg-white animate-pulse"></span>
-            <span class="block w-8 h-0.5 bg-white animate-pulse"></span>
-            <span class="block w-8 h-0.5 bg-white animate-pulse"></span>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
       <main className="bg-white px-5 md:px-20 lg:px-40 ">
-        <section className="min-h-screen">
+        <section className="min-h-screen text-center p-10" id="home">
           <div className="text-center p-10">
-            <h2 className="text-4xl py-5 md:text-6xl text-red-500 font-bold">Hello World!</h2>
-            <h3 className="text-2xl py-2 md:text-2xl">I'm a web developer. I love to create beautiful and efficient things!</h3>
+            <h2 className="text-4xl py-10 md:text-6xl text-red-500 font-bold">Hello World!</h2>
+            <h3 className="text-2xl py-2 md:text-2xl">I'm a web developer. I love to create beautiful and functional apps and websites!</h3>
           </div>
           <div >
             <Image src={marta} alt="a photo of me" className="w-45 h-45 mx-auto m-10 rounded-full relative overflow-hidden lg:w-80 lg:h-80" />
@@ -61,9 +41,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <div className="lg:px-40 text-center">
-            <h3 className="text-3xl lg:text-4xl p-5  text-sky-800 font-medium">My name is Marta. Nice to meet you.</h3>
+        <section id="about">
+          <div className="lg:px-40 text-center pt-6">
+            <h3 className="text-3xl lg:text-4xl px-5 py-10 text-sky-800 font-medium">My name is Marta. Nice to meet you.</h3>
             <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
               I'm currently seeking a hybrid full-time position in Berlin or remote work from anywhere.</p>
             <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
@@ -147,6 +127,8 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </section>
+        <section id="work">
           <div>
             <h3 className="text-4xl lg:text-6xl py-20 text-center text-red-500 font-bold px-0 mx-0">My Works</h3>
           </div>
@@ -220,7 +202,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="contact">
           <div className="">
             <h3 className="text-4xl lg:text-6xl py-20 text-center text-red-500 font-bold">Contact</h3>
             <div className="p-30 text-center my-20 h-96">
