@@ -53,7 +53,7 @@ export default function Home() {
               I am a certified front-end developer with a background in customer service and freelance translation, proficient in HTML, CSS, JavaScript, and TypeScript.
               My experience includes building beautiful and functional apps using the MERN stack.
               I am eager to work further to improve my skills and make a positive impact in the world as part of a collaborative team.
-              Curious to learn more about me? <a href="#" className="text-red-500 cursor-pointer underline">Download my resume</a> or keep scrolling.
+              Curious to learn more about me? <a href="/public/MartaKaraba_WebDev_CV.pdf" download className="text-red-500 cursor-pointer underline">Download my resume</a> or keep scrolling.
 
             </p>
           </div>
