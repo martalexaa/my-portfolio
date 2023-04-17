@@ -56,7 +56,7 @@ export default function Home() {
         <section id="about">
           <div className="lg:px-40 text-center">
             <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500 font-bold">
-              About me</h3>
+              ABOUT</h3>
             <h3 className="text-2xl md:text-3xl px-5 py-8 text-sky-800 font-medium">
               My name is Marta. Nice to meet you.</h3>
             <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
@@ -147,7 +147,7 @@ export default function Home() {
         </section>
         <section id="work">
           <div>
-            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">My Works</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">WORK</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-white">
 
@@ -265,7 +265,7 @@ export default function Home() {
 
         <section id="contact">
           <div className="">
-            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">Contact</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">CONTACT</h3>
             <div className="p-30 text-center my-20 h-96">
               <h3 className="text-xl md:text-3xl p-5  text-sky-800 font-medium">Are you interested in working with me? Let's get in touch!</h3>
               <ul className="py-20 md:text-xl">
