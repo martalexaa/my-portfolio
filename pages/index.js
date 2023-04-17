@@ -6,10 +6,14 @@ import {
   AiFillLinkedin,
   AiFillTwitterCircle,
 } from "react-icons/ai";
+import { FaTools } from 'react-icons/fa'
 import marta from "../public/marta-foto.jpg";
 import web1 from "../public/web-1.jpg";
 import web2 from "../public/web-2.jpg";
 import web3 from "../public/web-3.png";
+import web4 from "../public/chatapp.jpg";
+import web5 from "../public/movieapi.png";
+import web6 from "../public/portfolio.png";
 import Link from 'next/link'
 import Navbar from "./navbar";
 
@@ -27,11 +31,11 @@ export default function Home() {
 
         <section className="min-h-screen text-center p-5 md:p-4" id="home">
           <div className="text-center p-10">
-            <h2 className="text-4xl py-5 md:py-7 lg:py-10 md:text-5xl text-red-500 font-bold">Hello World!</h2>
+            <h2 className="text-4xl py-8 md:py-9 lg:py-10 md:text-5xl text-red-500 font-bold">Hello World!</h2>
             <h3 className="text-xl md:text-2xl">I'm a web developer. I love to create beautiful and functional apps and websites!</h3>
           </div>
           <div >
-            <Image src={marta} alt="a photo of me" className="w-52 h-52 mx-auto rounded-full relative overflow-hidden md:w-60 md:h-60 lg:w-80 lg:h-80" />
+            <Image src={marta} alt="a photo of me" className="w-72 h-72 mx-auto rounded-full relative overflow-hidden md:w-72 md:h-72 lg:w-96 lg:h-96" />
           </div>
           <div className="text-4xl flex justify-center gap-16 pt-10 text-gray-600">
             <a href="https://github.com/martalexaa" target="blank"><AiFillGithub /></a>
@@ -42,7 +46,7 @@ export default function Home() {
 
         <section id="about">
           <div className="lg:px-40 text-center">
-            <h3 className="text-4xl md:text-5xl pt-10 pb-5 md:pt-20 md:pb-10 text-center text-red-500 font-bold">About me</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500 font-bold">About me</h3>
             <h3 className="text-2xl md:text-3xl px-5 py-8 text-sky-800 font-medium">My name is Marta. Nice to meet you.</h3>
             <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
               I am currently seeking a hybrid full-time position in Berlin or remote work from anywhere.</p>
@@ -57,7 +61,11 @@ export default function Home() {
         </section>
 
         <section id="dev-skills">
-          <h3 className="text-3xl md:text-4xl py-20 pt-10 text-center text-sky-800 font-bold">My Toolbox</h3>
+          <div className="text-center flex-1 py-20 pt-10 ">
+            <div className="flex-1 m-auto w-fit text-4xl text-sky-800"><FaTools /></div>
+            <h3 className="text-3xl md:text-4xl text-center text-sky-800 font-bold">My Toolbox </h3>
+          </div>
+
           <div className="flex justify-center p-30">
             <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-2/5">
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">html</div>
@@ -83,6 +91,7 @@ export default function Home() {
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">jest</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">cucumber</div>
               <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">angular</div>
+              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">trello</div>
             </div>
           </div>
         </section>
@@ -95,9 +104,9 @@ export default function Home() {
                 I am a certified developer
               </h3>
               <p className="py-2">
-                I completed a six-month full-stack web development course, with the guidance of a tutor and mentor,
-                and gained a strong foundation in HTML, CSS, and JavaScript, as well as experience with some more advanced tools.
-                Becoming a web developer was the journey of my life which I truly enjoyed!
+                I successfully completed a comprehensive six-month full-stack web development course with the guidance of a tutor and mentor.
+                This experience provided me with a solid foundation in essential web technologies such as HTML, CSS, and JavaScript, as well as exposure to more advanced tools.
+                Becoming a web developer has been a fulfilling journey that I thoroughly enjoyed and feel passionate about.
               </p>
             </div>
 
@@ -107,9 +116,8 @@ export default function Home() {
                 I have experience
               </h3>
               <p className="py-2">
-                I worked as a freelance translator for several years, which taught me skills such as effective communication with clients,
-                meeting deadlines, and the ability to work independently.
-                I also worked as a customer service agent in e-commerce at a multinational company where I had the chance to be part of a bigger team.
+                As a freelance translator, I learned how to communicate effectively with clients, meet deadlines, and work independently. I also gained valuable experience as a customer service agent in e-commerce, where I worked as part of a team at a multinational company.
+                These roles have provided me with transferable skills such as strong communication, time management, patience, and the ability to work independently or as part of a team.
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
@@ -118,9 +126,9 @@ export default function Home() {
                 I have a university degree
               </h3>
               <p className="py-2">
-                My academic background helps me to independently search and critically evaluate information.
-                It also brings me in a good position to think outside the box when facing technical challenges.
-                Studying and learning new skills was always a priority in my life.
+                My academic background equips me with the ability to proficiently conduct independent research and critically evaluate information.
+                This foundation also positions me advantageously to think creatively and innovatively when confronted with technical challenges.
+                Throughout my life, I have consistently prioritized studying and acquiring new skills, demonstrating my commitment to continuous learning.
               </p>
             </div>
           </div>
@@ -137,10 +145,10 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-5 pb-5">The Meet App is a serverless, progressive web application (PWA) with React using a
-                test-driven development (TDD) technique.
-                The application uses the Google Calendar API to fetch upcoming events
-                and allows users to search for a city and get a list of events hosted in that city.</p>
+              <p className="pt-5 pb-5">The Meet App is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD) approach.
+                It utilizes the Google Calendar API to fetch upcoming events and allows users to search for events in a specific city.
+                With a focus on user experience, the Meet App includes features such as filtering events by city, expanding and collapsing event details,
+                specifying the number of events to display, and offline functionality that allows users to access cached data when there is no internet connection.</p>
               <div className="flex justify-between px-20">
                 <a href="https://martalexaa.github.io/meet/" target="blank"
                   className="text-center cursor-pointer  border-2 border-solid border-white px-1">DEMO</a>
@@ -154,12 +162,15 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-5 pb-5">The Movie App allows users to log in and read information about movies,
-                and add some of them to their favorites.
-                It uses a REST API to handle data and is built using MERN stack technologies, which include MongoDB, Express, React, and Node.js.</p>
-              <div className="flex justify-between px-20">
+              <p className="pt-5 pb-5">The Movie App is a MERN stack web application that lets users access and save movie information. It includes multiple views for displaying movies, adding them to favorites, and managing user profile.
+                Built with React, Bootstrap, and Redux, the app offers a responsive UI, state routing for navigation, and is hosted on Netlify for easy access.
+                Designed to provide a user-friendly experience, the Movie App is a single-page, responsive web app for movie enthusiasts to easily access and manage their favorite movies.</p>
+              <div className="flex justify-between px-20 gap-4">
                 <a href="https://martalexaa-movie-app.netlify.app/signup" target="blank"
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">DEMO</a>
+                <Link href="/myflix_case_study"
+                  target="blank"
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1">CASE</Link>
                 <a href="https://github.com/martalexaa/myFlix-client"
                   target="blank"
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
@@ -171,8 +182,9 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-5 pb-5">The Pokedex is a small web application created as part of CareerFoundry's Full-Stack Web Development
-                course with HTML, CSS, JavaScript, Bootstrap and jQuery that loads data from an external API and enables the viewing of data points in detail.
+              <p className="pt-5 pb-5">The Pokedex-App is a small web application developed using HTML, CSS, JavaScript, Bootstrap, and jQuery.
+                It loads data from an external API, allowing users to view a list of items, click on a list item to view more details, search for items, and use additional UI patterns such as modals. The app is formatted according to ESLint rules and is hosted on GitHub Pages,
+                compatible with popular web browsers.
               </p>
               <div className="flex justify-between px-20">
                 <a href="https://martalexaa.github.io/pokedex-app" target="blank"
@@ -182,17 +194,57 @@ export default function Home() {
               </div>
             </div>
             <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
-              <Image src={web1}
+              <Image src={web4}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-5 pb-5">A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
-                The application uses the Google Calendar API to fetch upcoming events.
-                This Meet App will allow users to search for a city and get a list of events hosted in that city.</p>
+              <p className="pt-5 pb-5">The Chat App is a mobile chat application developed using React Native that allows users to easily send messages, share images, and share their location with friends and family.
+                It also provides offline messaging capability, allowing users to read their messages even when they are offline.
+                The app is built with React Native and can be run on Android smartphones or device emulators in Android Studio, with all dependencies outlined in the package.json file.</p>
               <div className="flex justify-between px-20">
-                <p className="text-center cursor-pointer  underline">DEMO</p>
-                <p className="text-center cursor-pointer  underline">CODE</p>
+                <div className="flex justify-between px-20">
+                  <a href="https://github.com/martalexaa/chat-app" target="blank"
+                    className="hidden text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
+                </div>
+                <a href="https://github.com/martalexaa/chat-app" target="blank"
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
+              </div>
+            </div>
+            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
+              <Image src={web5}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                alt="a screenshot of my project" />
+              <p className="pt-5 pb-5">The myFlix Backend API is a secure Node.js and Express application that provides movie information to users. It follows REST architecture, includes user authentication and authorization with JWT, data validation, and data security features.
+                The API allows users to view and manage movies, directors, and genres. Tested with Postman, the API is hosted on GitHub and deployed to Render for easy access.
+              </p>
+              <div className="flex justify-between px-20">
+                <div className="flex justify-between px-20">
+                  <a href="https://github.com/martalexaa/chat-app" target="blank"
+                    className="hidden text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
+                </div>
+                <a href="https://github.com/martalexaa/movie_api" target="blank"
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
+              </div>
+            </div>
+            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
+              <Image src={web6}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                alt="a screenshot of my project" />
+              <p className="pt-5 pb-5">My portfolio website was built with Next.js and Tailwind, offering benefits such as server-side rendering, static site generation, easy deployment, and seamless client-side routing.
+                Tailwind's pre-designed components and responsive layout classes speed up development.
+                The combination of Next.js and Tailwind creates a fast, responsive, and visually appealing portfolio website that showcases my skills and projects efficiently.</p>
+              <div className="flex justify-between px-20">
+                <div className="flex justify-between px-20">
+                  <a href="https://github.com/martalexaa/chat-app" target="blank"
+                    className="hidden text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
+                </div>
+                <a href="https://github.com/martalexaa/my-portfolio" target="blank"
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
 
