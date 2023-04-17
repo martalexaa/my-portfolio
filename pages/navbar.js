@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <nav className="py-3 lg:mb-12 flex justify-end lg:pr-5 bg-gray-600 fixed top-0 w-full z-10" >
-            <ul className={`space-x-8 lg:flex text-white ${isMenuOpen ? 'block' : 'hidden'}`}>
+            <ul className={`lg:flex text-white ${isMenuOpen ? 'block' : 'hidden'}`}>
                 <li className="mr-6">
                     <Link to="home" smooth={true} duration={500} className="cursor-pointer text-xl">
                         HOME

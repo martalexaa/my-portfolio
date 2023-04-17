@@ -1,21 +1,17 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { MdDeveloperMode, MdWork, MdMenuBook } from 'react-icons/md';
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillTwitterCircle,
 } from "react-icons/ai";
-import { FaConnectdevelop } from 'react-icons/fa';
 import marta from "../public/marta-foto.jpg";
 import web1 from "../public/web-1.jpg";
 import web2 from "../public/web-2.jpg";
 import web3 from "../public/web-3.png";
 import Link from 'next/link'
-
 import Navbar from "./navbar";
-import Impressum from "./impressum"
 
 export default function Home() {
   return (
@@ -28,7 +24,8 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className="bg-white px-2 md:px-20 lg:px-40">
-        <section className="min-h-screen text-center p-5 md:p-4 pt:p-10" id="home">
+
+        <section className="min-h-screen text-center p-5 md:p-4" id="home">
           <div className="text-center p-10">
             <h2 className="text-4xl py-5 md:py-7 lg:py-10 md:text-5xl text-red-500 font-bold">Hello World!</h2>
             <h3 className="text-xl md:text-2xl">I'm a web developer. I love to create beautiful and functional apps and websites!</h3>
@@ -36,7 +33,7 @@ export default function Home() {
           <div >
             <Image src={marta} alt="a photo of me" className="w-52 h-52 mx-auto rounded-full relative overflow-hidden md:w-60 md:h-60 lg:w-80 lg:h-80" />
           </div>
-          <div className="text-4xl flex justify-center gap-16 pt-7 text-gray-600">
+          <div className="text-4xl flex justify-center gap-16 pt-10 text-gray-600">
             <a href="https://github.com/martalexaa" target="blank"><AiFillGithub /></a>
             <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/" target="blank"><AiFillLinkedin /></a>
             <a href="https://twitter.com/MartaKaraba" target="blank"><AiFillTwitterCircle /></a>
@@ -44,16 +41,16 @@ export default function Home() {
         </section>
 
         <section id="about">
-          <div className="lg:px-40 text-center pt-6">
-            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">About me</h3>
-            <h3 className="text-3xl lg:text-4xl px-5 py-10 text-sky-800 font-medium">My name is Marta. Nice to meet you.</h3>
+          <div className="lg:px-40 text-center">
+            <h3 className="text-4xl md:text-5xl pt-10 pb-5 md:pt-20 md:pb-10 text-center text-red-500 font-bold">About me</h3>
+            <h3 className="text-2xl md:text-3xl px-5 py-8 text-sky-800 font-medium">My name is Marta. Nice to meet you.</h3>
             <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
               I am currently seeking a hybrid full-time position in Berlin or remote work from anywhere.</p>
             <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
               I am a certified front-end developer with a background in customer service and freelance translation, proficient in HTML, CSS, JavaScript, and TypeScript.
               My experience includes building beautiful and functional apps using the MERN stack.
               I am eager to work further to improve my skills and make a positive impact in the world as part of a collaborative team.
-              Curious to learn more about me? <a href="/public/MartaKaraba_WebDev_CV.pdf" download className="text-red-500 cursor-pointer underline">Download my resume</a> or keep scrolling.
+              Curious to learn more about me? <a href="/files/Marta_Karaba_WebDev_CV.pdf" alt="My CV in pdf format" target="_blank" rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">Download my resume</a> or keep scrolling.
 
             </p>
           </div>
@@ -134,13 +131,13 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-white">
 
-            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
               <Image src={web1}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-2 pb-2">The Meet App is a serverless, progressive web application (PWA) with React using a
+              <p className="pt-5 pb-5">The Meet App is a serverless, progressive web application (PWA) with React using a
                 test-driven development (TDD) technique.
                 The application uses the Google Calendar API to fetch upcoming events
                 and allows users to search for a city and get a list of events hosted in that city.</p>
@@ -151,13 +148,13 @@ export default function Home() {
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
               <Image src={web2}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-2 pb-2">The Movie App allows users to log in and read information about movies,
+              <p className="pt-5 pb-5">The Movie App allows users to log in and read information about movies,
                 and add some of them to their favorites.
                 It uses a REST API to handle data and is built using MERN stack technologies, which include MongoDB, Express, React, and Node.js.</p>
               <div className="flex justify-between px-20">
@@ -168,13 +165,13 @@ export default function Home() {
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
               <Image src={web3}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-2 pb-2">The Pokedex is a small web application created as part of CareerFoundry's Full-Stack Web Development
+              <p className="pt-5 pb-5">The Pokedex is a small web application created as part of CareerFoundry's Full-Stack Web Development
                 course with HTML, CSS, JavaScript, Bootstrap and jQuery that loads data from an external API and enables the viewing of data points in detail.
               </p>
               <div className="flex justify-between px-20">
@@ -184,13 +181,13 @@ export default function Home() {
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-2 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
               <Image src={web1}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-2 pb-2 ">A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
+              <p className="pt-5 pb-5">A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
                 The application uses the Google Calendar API to fetch upcoming events.
                 This Meet App will allow users to search for a city and get a list of events hosted in that city.</p>
               <div className="flex justify-between px-20">
@@ -207,12 +204,12 @@ export default function Home() {
             <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">Contact</h3>
             <div className="p-30 text-center my-20 h-96">
               <h3 className="text-xl md:text-3xl p-5  text-sky-800 font-medium">Are you interested in working with me? Let's get in touch!</h3>
-              <ul className="py-20 text-xl">
+              <ul className="py-20 md:text-xl">
                 <li className="pb-4">martalexa@gmail.com</li>
                 <li className="pb-4">Skype: live:martalexa_2</li>
                 <li className="pb-4">+49 1773271140</li>
               </ul>
-              <div className="text-4xl py-5 flex justify-center gap-10 md:gap-16 text-gray-600">
+              <div className="text-4xl flex justify-center gap-10 md:gap-16 text-gray-600">
                 <a href="https://github.com/martalexaa" target="blank"><AiFillGithub /></a>
                 <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/" target="blank"><AiFillLinkedin /></a>
                 <a href="https://twitter.com/MartaKaraba" target="blank"><AiFillTwitterCircle /></a>
@@ -221,7 +218,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-5">
+        <section className="py-2">
           <div className="text-center text-gray-600">
             <p className="text-xs">Created with Next.js and Tailwind CSS by Marta Karaba.</p>
             <Link href="/impressum" className="underline cursor-pointer">Impressum</Link>
