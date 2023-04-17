@@ -31,7 +31,7 @@ export default function Home() {
 
         <section className="min-h-screen text-center p-5 md:p-4" id="home">
           <div className="text-center p-10">
-            <h2 className="text-4xl py-8 md:py-9 lg:py-10 md:text-5xl text-red-500 font-bold">Hello World!</h2>
+            <h2 className="text-4xl py-7 md:py-9 lg:py-10 md:text-5xl text-red-500 font-bold">Hello World!</h2>
             <h3 className="text-xl md:text-2xl">I'm a web developer. I love to create beautiful and functional apps and websites!</h3>
           </div>
           <div >
