@@ -31,7 +31,7 @@ export default function Home() {
 
         <section className="min-h-screen text-center p-5 md:p-4" id="home">
           <div className="text-center p-10">
-            <h2 className="text-4xl py-7 md:py-9 lg:py-10 md:text-5xl text-red-500 font-bold">Hello World!</h2>
+            <h2 className="text-4xl py-6 md:py-9 lg:py-10 md:text-5xl text-red-500 font-bold">Hello World!</h2>
             <h3 className="text-xl md:text-2xl">I'm a web developer. I love to create beautiful and functional apps and websites!</h3>
           </div>
           <div >
@@ -68,30 +68,30 @@ export default function Home() {
 
           <div className="flex justify-center p-30">
             <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-2/5">
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">html</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">css</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">javascript</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">typescript</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">jquery</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">react</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">next.js</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">react native</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">tailwind</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">bootstrap</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">sass</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">aws</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">serverless</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">node</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">MERN</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">express</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">mongodb</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">sql</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">firestore</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">git</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">jest</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">cucumber</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">angular</div>
-              <div className="m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">trello</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">html</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">css</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">javascript</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">typescript</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">jquery</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">react</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">next.js</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">react native</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">tailwind</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">bootstrap</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">sass</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">aws</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">serverless</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">node</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">MERN</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">express</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">mongodb</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">sql</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">firestore</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">git</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">jest</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">cucumber</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">angular</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">trello</div>
             </div>
           </div>
         </section>
