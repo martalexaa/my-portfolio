@@ -32,30 +32,42 @@ export default function Home() {
         <section className="min-h-screen text-center p-5 md:p-4" id="home">
           <div className="text-center p-10">
             <h2 className="text-4xl py-6 md:py-9 lg:py-10 md:text-5xl text-red-500 font-bold">Hello World!</h2>
-            <h3 className="text-xl md:text-2xl">I'm a web developer. I love to create beautiful and functional apps and websites!</h3>
+            <h3 className="text-xl md:text-2xl">I'm a web developer.
+              I love to create beautiful and functional apps and websites!</h3>
           </div>
           <div >
-            <Image src={marta} alt="a photo of me" className="w-72 h-72 mx-auto rounded-full relative overflow-hidden md:w-72 md:h-72 lg:w-96 lg:h-96" />
+            <Image src={marta}
+              alt="a photo of me"
+              className="w-72 h-72 mx-auto rounded-full relative overflow-hidden md:w-72 md:h-72 lg:w-96 lg:h-96" />
           </div>
           <div className="text-4xl flex justify-center gap-16 pt-10 text-gray-600">
-            <a href="https://github.com/martalexaa" target="blank"><AiFillGithub /></a>
-            <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/" target="blank"><AiFillLinkedin /></a>
-            <a href="https://twitter.com/MartaKaraba" target="blank"><AiFillTwitterCircle /></a>
+            <a href="https://github.com/martalexaa"
+              target="blank"
+              className="hover:animate-pulse"><AiFillGithub /></a>
+            <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/"
+              target="blank"
+              className="hover:animate-pulse"><AiFillLinkedin /></a>
+            <a href="https://twitter.com/MartaKaraba"
+              target="blank"
+              className="hover:animate-pulse"><AiFillTwitterCircle /></a>
           </div>
         </section>
 
         <section id="about">
           <div className="lg:px-40 text-center">
-            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500 font-bold">About me</h3>
-            <h3 className="text-2xl md:text-3xl px-5 py-8 text-sky-800 font-medium">My name is Marta. Nice to meet you.</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500 font-bold">
+              About me</h3>
+            <h3 className="text-2xl md:text-3xl px-5 py-8 text-sky-800 font-medium">
+              My name is Marta. Nice to meet you.</h3>
             <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
               I am currently seeking a hybrid full-time position in Berlin or remote work from anywhere.</p>
             <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
               I am a certified front-end developer with a background in customer service and freelance translation, proficient in HTML, CSS, JavaScript, and TypeScript.
               My experience includes building beautiful and functional apps using the MERN stack.
               I am eager to work further to improve my skills and make a positive impact in the world as part of a collaborative team.
-              Curious to learn more about me? <a href="/files/Marta_Karaba_WebDev_CV.pdf" alt="My CV in pdf format" target="_blank" rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">Download my resume</a> or keep scrolling.
-
+              Curious to learn more about me?
+              <a href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank" rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">
+                Download my resume</a> or keep scrolling.
             </p>
           </div>
         </section>
@@ -262,9 +274,15 @@ export default function Home() {
                 <li className="pb-4">+49 1773271140</li>
               </ul>
               <div className="text-4xl flex justify-center gap-10 md:gap-16 text-gray-600">
-                <a href="https://github.com/martalexaa" target="blank"><AiFillGithub /></a>
-                <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/" target="blank"><AiFillLinkedin /></a>
-                <a href="https://twitter.com/MartaKaraba" target="blank"><AiFillTwitterCircle /></a>
+                <a href="https://github.com/martalexaa"
+                  target="blank"
+                  className="hover:animate-pulse"><AiFillGithub /></a>
+                <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/"
+                  target="blank"
+                  className="hover:animate-pulse"><AiFillLinkedin /></a>
+                <a href="https://twitter.com/MartaKaraba"
+                  target="blank"
+                  className="hover:animate-pulse"><AiFillTwitterCircle /></a>
               </div>
             </div>
           </div>
