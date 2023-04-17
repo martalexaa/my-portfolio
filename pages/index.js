@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="bg-white px-2 md:px-20 lg:px-40">
+      <main className="bg-white px-2 md:px-5 lg:px-30">
 
         <section className="min-h-screen text-center p-5 md:p-4" id="home">
           <div className="text-center p-10">
@@ -57,29 +57,72 @@ export default function Home() {
           <div className="lg:px-40 text-center">
             <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500 font-bold">
               ABOUT</h3>
-            <h3 className="text-2xl md:text-3xl px-5 py-8 text-sky-800 font-medium">
-              My name is Marta. Nice to meet you.</h3>
-            <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
-              I am currently seeking a hybrid full-time position in Berlin or remote work from anywhere.</p>
-            <p className="text-md py-2 leading-8 pb-10 lg:text-xl">
-              I am a certified front-end developer with a background in customer service and freelance translation, proficient in HTML, CSS, JavaScript, and TypeScript.
-              My experience includes building beautiful and functional apps using the MERN stack.
-              I am eager to work further to improve my skills and make a positive impact in the world as part of a collaborative team.
-              Curious to learn more about me?
-              <a href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank" rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">
-                Download my resume</a> or keep scrolling.
+            <h3 className="text-xl md:text-2xl px-5 py-5 text-sky-800 font-medium">
+              My name is Marta. Let me introduce myself.👋</h3>
+            <p className="text-lg py-2 leading-8 text-justify">
+              I've always had very diverse interests (from languages and poetry across to photography, art, natural sciences, politics, tech and more).
+              Probably that's why I enjoy learning new things.
+              Besides my major in Polish language and literature I studied a bit of everything at the Faculty of Humanities,
+              but later realized that there weren't many good job opportunities related to my studies.
+              I love to translate books, but the demand for Polish-Hungarian translators is low. Especially in Berlin.
+              Luckily, I love (and am able) to do other things too! It was in high school when
+              I discovered my passion for front-end development after building my very first website,
+              and I've been thinking about doing it professionally ever since. Recently, I completed a full-stack web development program at Careerfoundry.
+            </p>
+            <p className="text-lg py-2 leading-8 text-justify">I love front-end development because it allows me to be creative, continuously learn, and solve problems.
+              Collaborating with a team to build websites and web applications that have a direct impact on people's lives is rewarding, and the flexibility to work remotely provides a good work-life balance.
+              Overall, it is a fulfilling career that I am passionate about.
+            </p>
+            <p className="text-lg py-2 leading-8 text-justify">
+              So, here I am now, a certified web development enthusiast seeking a hybrid or home office full-time junior position in Berlin or remote work from anywhere. <a href="/files/Marta_Karaba_WebDev_CV.pdf"
+                alt="Click here to download my CV in pdf format" target="_blank"
+                rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">Download my resume</a>
             </p>
           </div>
         </section>
 
-        <section id="dev-skills">
-          <div className="text-center flex-1 py-20 pt-10 ">
-            <div className="flex-1 m-auto w-fit text-4xl text-sky-800"><FaTools /></div>
-            <h3 className="text-3xl md:text-4xl text-center text-sky-800 font-bold">My Toolbox </h3>
+        <section id="about-cards">
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+              <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdDeveloperMode /></div>
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                I am a certified developer
+              </h3>
+              <p className="py-2 text-justify">
+                I successfully completed a comprehensive six-month full-stack web development course with the guidance of a tutor and mentor.
+                This experience provided me with a solid foundation in essential web technologies such as HTML, CSS, and JavaScript, as well as exposure to more advanced tools.
+                Becoming a web developer has been a exciting journey that I thoroughly enjoyed and feel passionate about.
+              </p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+              <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdWork /></div>
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                I have experience
+              </h3>
+              <p className="py-2 text-justify">
+                As a freelance translator, I learned how to communicate effectively with clients, meet deadlines, and work independently. I also gained valuable experience as a customer service agent in e-commerce, where I worked as part of a team at a multinational company.
+                These roles have provided me with transferable skills such as strong communication, time management, patience, and the ability to work independently or as part of a team.
+              </p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+              <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdMenuBook /></div>
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                I have a university degree
+              </h3>
+              <p className="py-2 text-justify">
+                My academic background equips me with the ability to proficiently conduct independent research and critically evaluate information.
+                This foundation also positions me advantageously to think creatively and innovatively when confronted with technical challenges.
+                Throughout my life, I have consistently prioritized studying and acquiring new skills, demonstrating my commitment to continuous learning.
+              </p>
+            </div>
           </div>
+        </section>
 
-          <div className="flex justify-center p-30">
-            <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-2/5">
+        <section id="dev-skills">
+
+          <h3 className="text-3xl md:text-4xl text-center text-sky-800 font-bold pb-3 pt-5">My Toolbox </h3>
+          <div className="flex justify-center">
+            <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-2/4">
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">html</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">css</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">javascript</div>
@@ -94,62 +137,30 @@ export default function Home() {
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">aws</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">serverless</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">node</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">NPM</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">rest api</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">MERN</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">express</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">mongodb</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">sql</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">firestore</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">git</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">postman</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">jest</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">cucumber</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">pwa</div>
+              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">spa</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">angular</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">trello</div>
             </div>
           </div>
         </section>
 
-        <section>
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
-              <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdDeveloperMode /></div>
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                I am a certified developer
-              </h3>
-              <p className="py-2">
-                I successfully completed a comprehensive six-month full-stack web development course with the guidance of a tutor and mentor.
-                This experience provided me with a solid foundation in essential web technologies such as HTML, CSS, and JavaScript, as well as exposure to more advanced tools.
-                Becoming a web developer has been a fulfilling journey that I thoroughly enjoyed and feel passionate about.
-              </p>
-            </div>
-
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
-              <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdWork /></div>
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                I have experience
-              </h3>
-              <p className="py-2">
-                As a freelance translator, I learned how to communicate effectively with clients, meet deadlines, and work independently. I also gained valuable experience as a customer service agent in e-commerce, where I worked as part of a team at a multinational company.
-                These roles have provided me with transferable skills such as strong communication, time management, patience, and the ability to work independently or as part of a team.
-              </p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
-              <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdMenuBook /></div>
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                I have a university degree
-              </h3>
-              <p className="py-2">
-                My academic background equips me with the ability to proficiently conduct independent research and critically evaluate information.
-                This foundation also positions me advantageously to think creatively and innovatively when confronted with technical challenges.
-                Throughout my life, I have consistently prioritized studying and acquiring new skills, demonstrating my commitment to continuous learning.
-              </p>
-            </div>
-          </div>
-        </section>
         <section id="work">
           <div>
-            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">WORK</h3>
+            <h3 className="text-4xl md:text-5xl py-20 text-center text-red-500 font-bold">WORK</h3>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-white">
+          <div className="flex flex-col gap-2 py-2 lg:flex-row lg:flex-wrap text-white">
 
             <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
               <Image src={web1}
@@ -157,7 +168,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-5 pb-5">The Meet App is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD) approach.
+              <p className="py-5 text-justify">The Meet App is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD) approach.
                 It utilizes the Google Calendar API to fetch upcoming events and allows users to search for events in a specific city.
                 With a focus on user experience, the Meet App includes features such as filtering events by city, expanding and collapsing event details,
                 specifying the number of events to display, and offline functionality that allows users to access cached data when there is no internet connection.</p>
@@ -174,18 +185,18 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-5 pb-5">The Movie App is a MERN stack web application that lets users access and save movie information. It includes multiple views for displaying movies, adding them to favorites, and managing user profile.
+              <p className="py-5 text-justify">The Movie App is a MERN stack web application that lets users access and save movie information. It includes multiple views for displaying movies, adding them to favorites, and managing user profile.
                 Built with React, Bootstrap, and Redux, the app offers a responsive UI, state routing for navigation, and is hosted on Netlify for easy access.
                 Designed to provide a user-friendly experience, the Movie App is a single-page, responsive web app for movie enthusiasts to easily access and manage their favorite movies.</p>
-              <div className="flex justify-between px-20 gap-4">
+              <div className="flex justify-between gap-4">
                 <a href="https://martalexaa-movie-app.netlify.app/signup" target="blank"
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">DEMO</a>
-                <Link href="/myflix_case_study"
-                  target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1">CASE</Link>
                 <a href="https://github.com/martalexaa/myFlix-client"
                   target="blank"
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
+                <Link href="/myflix_case_study"
+                  target="blank"
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1">CASE STUDY</Link>
               </div>
             </div>
             <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
@@ -194,7 +205,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-5 pb-5">The Pokedex-App is a small web application developed using HTML, CSS, JavaScript, Bootstrap, and jQuery.
+              <p className="py-5 text-justify">The Pokedex-App is a small web application developed using HTML, CSS, JavaScript, Bootstrap, and jQuery.
                 It loads data from an external API, allowing users to view a list of items, click on a list item to view more details, search for items, and use additional UI patterns such as modals. The app is formatted according to ESLint rules and is hosted on GitHub Pages,
                 compatible with popular web browsers.
               </p>
@@ -211,7 +222,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-5 pb-5">The Chat App is a mobile chat application developed using React Native that allows users to easily send messages, share images, and share their location with friends and family.
+              <p className="py-5 text-justify">The Chat App is a mobile chat application developed using React Native that allows users to easily send messages, share images, and share their location with friends and family.
                 It also provides offline messaging capability, allowing users to read their messages even when they are offline.
                 The app is built with React Native and can be run on Android smartphones or device emulators in Android Studio, with all dependencies outlined in the package.json file.</p>
               <div className="flex justify-between px-20">
@@ -229,7 +240,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-5 pb-5">The myFlix Backend API is a secure Node.js and Express application that provides movie information to users. It follows REST architecture, includes user authentication and authorization with JWT, data validation, and data security features.
+              <p className="py-5 text-justify">The myFlix Backend API is a secure Node.js and Express application that provides movie information to users. It follows REST architecture, includes user authentication and authorization with JWT, data validation, and data security features.
                 The API allows users to view and manage movies, directors, and genres. Tested with Postman, the API is hosted on GitHub and deployed to Render for easy access.
               </p>
               <div className="flex justify-between px-20">
@@ -247,7 +258,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="pt-5 pb-5">My portfolio website was built with Next.js and Tailwind, offering benefits such as server-side rendering, static site generation, easy deployment, and seamless client-side routing.
+              <p className="py-5 text-justify">My portfolio website was built with Next.js and Tailwind, offering benefits such as server-side rendering, static site generation, easy deployment, and seamless client-side routing.
                 Tailwind's pre-designed components and responsive layout classes speed up development.
                 The combination of Next.js and Tailwind creates a fast, responsive, and visually appealing portfolio website that showcases my skills and projects efficiently.</p>
               <div className="flex justify-between px-20">
@@ -288,13 +299,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-2">
+        <section>
           <div className="text-center text-gray-600">
+            <hr class="h-px bg-gray-400 border-0 w-full"></hr>
             <p className="text-xs">Created with Next.js and Tailwind CSS by Marta Karaba.</p>
             <Link href="/impressum" className="underline cursor-pointer">Impressum</Link>
           </div>
         </section>
-      </main>
+      </main >
     </>
   )
 }
