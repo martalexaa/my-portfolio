@@ -67,9 +67,9 @@ export default function Home() {
               I am a curious and open-minded Polish-Hungarian girl living in Berlin. I've always had very diverse interests (from languages and poetry across to photography, art, natural sciences, politics, tech and more).
               Probably that's why I enjoy learning new things as well as creating products that are both visually appealing and functional.</p>
             <p className="text-lg py-2 leading-8 text-justify">
-              Besides my major in Slavic languages and literature I studied a bit of everything at the Faculty of Humanities,
-              but later realized that there weren't many good job opportunities related to my studies.
-              I love to translate books, but the demand for Polish-Hungarian translators is low. Especially in Germany...
+              In addition to my major in Slavic languages and literature I studied a bit of everything at the Faculty of Humanities.
+              However, I came to realize that the job opportunities directly related to my studies were limited.
+              Although I have a passion for translating books, the demand for Polish-Hungarian translators is low, especially in Germany...
             </p>
             <p className="text-lg py-2 leading-8 text-justify">
               Luckily, I like (and am able) to do other things too! It was in high school when
