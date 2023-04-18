@@ -28,9 +28,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="bg-white px-2 md:px-5 lg:px-30">
+      <main className="mx-2 md:mx-5 lg:mx-30">
 
-        <section className="min-h-screen text-center p-5 md:p-4" id="home">
+        <section className="min-h-screen text-center  w-full h-full" id="home">
           <div className="text-center p-10">
             <h2 className="text-4xl py-6 md:py-9 lg:py-10 md:text-5xl text-red-500 ">helloWorld</h2>
             <h3 className="text-xl md:text-2xl pb-8 text-sky-800">I'm a web developer.
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about">
+        <section id="about" className="">
           <div className="lg:px-40 text-center">
             <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500">
               ABOUT</h3>
@@ -87,9 +87,6 @@ export default function Home() {
                 rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">Download my resume</a>
             </p>
           </div>
-        </section>
-
-        <section id="about-cards">
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdDeveloperMode /></div>
@@ -128,10 +125,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
-
-        <section id="dev-skills">
-
           <h3 className="text-3xl md:text-4xl text-center text-sky-800 pb-3 pt-5">My Toolbox </h3>
           <div className="flex justify-center">
             <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-2/4">
@@ -168,13 +161,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="work">
+        <section id="work" className="">
           <div className="text-center">
-            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500">WORK</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-20 text-center text-red-500">WORK</h3>
           </div>
           <div className="flex flex-col gap-2 py-2 lg:flex-row lg:flex-wrap text-white">
 
-            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
               <Image src={web1}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -191,7 +184,7 @@ export default function Home() {
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
               <Image src={web2}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -211,7 +204,7 @@ export default function Home() {
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">CASE STUDY</Link>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
               <Image src={web3}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -228,7 +221,7 @@ export default function Home() {
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
               <Image src={web4}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -246,7 +239,7 @@ export default function Home() {
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
               <Image src={web5}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -264,7 +257,7 @@ export default function Home() {
                   className="text-center cursor-pointer border-2 border-solid border-white px-1">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 border-solid border-2 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
               <Image src={web6}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -287,36 +280,34 @@ export default function Home() {
         </section>
 
         <section id="contact">
-          <div className="">
-            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 ">CONTACT</h3>
-            <div className="p-30 text-center my-20 h-96">
-              <h3 className="text-xl md:text-2xl p-5  text-sky-800">Are you interested in working with me? Let's get in touch.</h3>
-              <ul className="py-20 md:text-xl">
-                <li className="pb-4">martalexa@gmail.com</li>
-                <li className="pb-4">Skype: live:martalexa_2</li>
-                <li className="pb-4">+49 1773271140</li>
-              </ul>
-              <div className="text-4xl flex justify-center gap-10 md:gap-16 text-gray-600">
-                <a href="https://github.com/martalexaa"
-                  target="blank"
-                  className="hover:animate-pulse"><AiFillGithub /></a>
-                <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/"
-                  target="blank"
-                  className="hover:animate-pulse"><AiFillLinkedin /></a>
-                <a href="https://twitter.com/MartaKaraba"
-                  target="blank"
-                  className="hover:animate-pulse"><AiFillTwitterCircle /></a>
-                <a href="https://medium.com/@martaalexandramcsaikaraba"
-                  target="blank"
-                  className="hover:animate-pulse"><AiFillMediumCircle /></a>
-              </div>
-            </div>
+          <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 ">CONTACT</h3>
+          <div className="p-30 text-center my-10 h-96">
+            <h3 className="text-xl md:text-2xl p-5  text-sky-800">Are you interested in working with me? Let's get in touch.</h3>
+            <ul className="py-20 md:text-xl">
+              <li className="pb-4">martalexa@gmail.com</li>
+              <li className="pb-4">Skype: live:martalexa_2</li>
+              <li className="pb-4">+49 1773271140</li>
+            </ul>
+          </div>
+          <div className="text-4xl flex justify-center gap-10 md:gap-16 text-gray-600 my-10">
+            <a href="https://github.com/martalexaa"
+              target="blank"
+              className="hover:animate-pulse"><AiFillGithub /></a>
+            <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/"
+              target="blank"
+              className="hover:animate-pulse"><AiFillLinkedin /></a>
+            <a href="https://twitter.com/MartaKaraba"
+              target="blank"
+              className="hover:animate-pulse"><AiFillTwitterCircle /></a>
+            <a href="https://medium.com/@martaalexandramcsaikaraba"
+              target="blank"
+              className="hover:animate-pulse"><AiFillMediumCircle /></a>
           </div>
         </section>
 
         <section>
           <div className="text-center text-gray-600">
-            <hr class="h-px bg-gray-400 border-0 w-full"></hr>
+            <hr class="h-px border-0 w-full"></hr>
             <p className="text-xs">Created with Next.js and Tailwind CSS by Marta Karaba.</p>
             <Link href="/impressum" className="underline cursor-pointer">Impressum</Link>
           </div>

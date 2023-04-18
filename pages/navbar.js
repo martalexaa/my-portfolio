@@ -14,7 +14,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="py-3 lg:mb-12 flex justify-end lg:pr-5 bg-gray-600 opacity-80 fixed top-0 w-full z-10" >
+        <nav className="py-3 lg:mb-12 flex justify-end lg:mr-5 bg-gray-600 opacity-80 fixed top-0 w-full z-10" >
             <ul className={`lg:flex text-white drop-shadow-lg opacity-100 ${isMenuOpen ? 'block' : 'hidden'}`}>
                 <li className="mr-6">
                     <Link to="home" smooth={true} duration={500} className="cursor-pointer text-xl">
