@@ -33,7 +33,7 @@ export default function Home() {
         <section className="min-h-screen text-center p-5 md:p-4" id="home">
           <div className="text-center p-10">
             <h2 className="text-4xl py-6 md:py-9 lg:py-10 md:text-5xl text-red-500 ">helloWorld</h2>
-            <h3 className="text-xl md:text-2xl pb-8">I'm a web developer.
+            <h3 className="text-xl md:text-2xl pb-8 text-sky-800">I'm a web developer.
               I love to create beautiful and functional things!</h3>
           </div>
           <div >
@@ -61,7 +61,7 @@ export default function Home() {
           <div className="lg:px-40 text-center">
             <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500">
               ABOUT</h3>
-            <h3 className="text-xl md:text-2xl px-5 py-5 text-sky-800 font-medium">
+            <h3 className="text-xl md:text-2xl pb-8 text-sky-800">
               My name is Marta. Let me introduce myself.👋</h3>
             <p className="text-lg py-2 leading-8 text-justify">
               I am a curious and open-minded Polish-Hungarian girl living in Berlin. I've always had very diverse interests (from languages and poetry across to photography, art, natural sciences, politics, tech and more).
@@ -169,8 +169,8 @@ export default function Home() {
         </section>
 
         <section id="work">
-          <div>
-            <h3 className="text-4xl md:text-5xl py-20 text-center text-red-500">WORK</h3>
+          <div className="text-center">
+            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500">WORK</h3>
           </div>
           <div className="flex flex-col gap-2 py-2 lg:flex-row lg:flex-wrap text-white">
 
@@ -290,7 +290,7 @@ export default function Home() {
           <div className="">
             <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 ">CONTACT</h3>
             <div className="p-30 text-center my-20 h-96">
-              <h3 className="text-xl md:text-3xl p-5  text-sky-800 font-medium">Are you interested in working with me? Let's get in touch!</h3>
+              <h3 className="text-xl md:text-2xl p-5  text-sky-800">Are you interested in working with me? Let's get in touch.</h3>
               <ul className="py-20 md:text-xl">
                 <li className="pb-4">martalexa@gmail.com</li>
                 <li className="pb-4">Skype: live:martalexa_2</li>
