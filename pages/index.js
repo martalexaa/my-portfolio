@@ -72,10 +72,10 @@ export default function Home() {
               Although I have a passion for translating books, the demand for Polish-Hungarian translators is low, especially in Germany...
             </p>
             <p className="text-lg py-2 leading-8 text-justify">
-              Luckily, I like (and am able) to do other things too! It was in high school when
-              I discovered my passion for front-end development after building my very first website,
-              and I've been thinking about doing it professionally ever since.
-              Recently, I took the opportunity to pursue this dream and completed a full-stack web development program at Careerfoundry.
+              Fortunately, I have discovered a passion for front-end development beyond my studies. It all started in high school when
+              I built my very first website and realized my affinity for web development. Since then, I have been nurturing this passion and contemplating a professional career in the field.
+              Recently, I seized the opportunity to pursue my dream and successfully
+              completed a comprehensive full-stack web development program at Careerfoundry, further honing my skills and knowledge in this area.
             </p>
             <p className="text-lg py-2 leading-8 text-justify">I love front-end development because it allows me to be creative, continuously learn, and solve problems.
               Collaborating with a team to build websites and web applications that have a direct impact on people's lives is rewarding, and the flexibility to work remotely provides a good work-life balance.
