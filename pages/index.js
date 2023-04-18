@@ -62,9 +62,12 @@ export default function Home() {
             <p className="text-lg py-2 leading-8 text-justify">
               I've always had very diverse interests (from languages and poetry across to photography, art, natural sciences, politics, tech and more).
               Probably that's why I enjoy learning new things.
-              Besides my major in Polish language and literature I studied a bit of everything at the Faculty of Humanities,
+              <p className="text-lg py-2 leading-8 text-justify"></p>
+              Besides my major in Slavic languages and literature I studied a bit of everything at the Faculty of Humanities,
               but later realized that there weren't many good job opportunities related to my studies.
               I love to translate books, but the demand for Polish-Hungarian translators is low. Especially in Berlin.
+            </p>
+            <p className="text-lg py-2 leading-8 text-justify">
               Luckily, I love (and am able) to do other things too! It was in high school when
               I discovered my passion for front-end development after building my very first website,
               and I've been thinking about doing it professionally ever since. Recently, I completed a full-stack web development program at Careerfoundry.
@@ -89,9 +92,10 @@ export default function Home() {
                 I am a certified developer
               </h3>
               <p className="py-2 text-justify">
-                I successfully completed a comprehensive six-month full-stack web development course with the guidance of a tutor and mentor.
-                This experience provided me with a solid foundation in essential web technologies such as HTML, CSS, and JavaScript, as well as exposure to more advanced tools.
-                Becoming a web developer has been a exciting journey that I thoroughly enjoyed and feel passionate about.
+                I completed a six-month full-stack web development course with the help of a tutor and mentor.
+                This experience gave me a solid foundation in essential web technologies like HTML, CSS, and JavaScript, as well as the understanding of advanced tools like the MERN stack.
+                I also learned about agile methodology and practiced soft and technical skills during the course like problem solving and debugging.
+                Becoming a web developer has been an exciting journey that I truly enjoyed and feel passionate about.
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
@@ -100,19 +104,22 @@ export default function Home() {
                 I have experience
               </h3>
               <p className="py-2 text-justify">
-                As a freelance translator, I learned how to communicate effectively with clients, meet deadlines, and work independently. I also gained valuable experience as a customer service agent in e-commerce, where I worked as part of a team at a multinational company.
-                These roles have provided me with transferable skills such as strong communication, time management, patience, and the ability to work independently or as part of a team.
+                As a freelance translator, I have honed my ability to meet deadlines and work independently, ensuring timely delivery of projects.
+                I have also gained valuable experience in customer service within the e-commerce industry, where I was part of a multinational team.
+                These roles have equipped me with transferable skills such as effective communication, being accountable for my work, managing my time efficiently,
+                paying attention to detail, exhibiting patience, and adopting a user-centric mindset.
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <div className="flex-1 m-auto w-fit text-4xl text-red-500"><MdMenuBook /></div>
               <h3 className="text-lg font-medium pt-8 pb-2  ">
-                I have a university degree
+                I have a degree in Slavic languages
               </h3>
               <p className="py-2 text-justify">
-                My academic background equips me with the ability to proficiently conduct independent research and critically evaluate information.
-                This foundation also positions me advantageously to think creatively and innovatively when confronted with technical challenges.
-                Throughout my life, I have consistently prioritized studying and acquiring new skills, demonstrating my commitment to continuous learning.
+                I've always made learning a priority by studying and acquiring new skills throughout my life.
+                My experience with various spoken languages has provided me with a strong foundation in comprehending the structure and syntax of programming languages more effectively.
+                Additionally, my academic background has equipped me with the ability to do research on my own and evaluate information critically.
+                It also nurtures my creativity in finding innovative solutions to complex technical problems.
               </p>
             </div>
           </div>
@@ -258,7 +265,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 alt="a screenshot of my project" />
-              <p className="py-5 text-justify">My portfolio website was built with Next.js and Tailwind, offering benefits such as server-side rendering, static site generation, easy deployment, and seamless client-side routing.
+              <p className="py-5 text-justify">I built this portfolio website with Next.js and Tailwind, offering benefits such as server-side rendering, static site generation, easy deployment, and seamless client-side routing.
                 Tailwind's pre-designed components and responsive layout classes speed up development.
                 The combination of Next.js and Tailwind creates a fast, responsive, and visually appealing portfolio website that showcases my skills and projects efficiently.</p>
               <div className="flex justify-between px-20">
