@@ -5,6 +5,7 @@ import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillTwitterCircle,
+  AiFillMediumCircle
 } from "react-icons/ai";
 import { FaTools } from 'react-icons/fa'
 import marta from "../public/marta-foto.jpg";
@@ -50,6 +51,9 @@ export default function Home() {
             <a href="https://twitter.com/MartaKaraba"
               target="blank"
               className="hover:animate-pulse"><AiFillTwitterCircle /></a>
+            <a href="https://medium.com/@martaalexandramcsaikaraba"
+              target="blank"
+              className="hover:animate-pulse"><AiFillMediumCircle /></a>
           </div>
         </section>
 
@@ -302,6 +306,9 @@ export default function Home() {
                 <a href="https://twitter.com/MartaKaraba"
                   target="blank"
                   className="hover:animate-pulse"><AiFillTwitterCircle /></a>
+                <a href="https://medium.com/@martaalexandramcsaikaraba"
+                  target="blank"
+                  className="hover:animate-pulse"><AiFillMediumCircle /></a>
               </div>
             </div>
           </div>
