@@ -69,13 +69,13 @@ export default function Home() {
             <p className="text-lg py-2 leading-8 text-justify">
               In addition to my major in Slavic languages and literature I studied a bit of everything at the Faculty of Humanities.
               However, I came to realize that the job opportunities directly related to my studies were limited.
-              Although I have a passion for translating books, the demand for Polish-Hungarian translators is low, especially in Germany...
+              Although I enjoyed translating books, the demand for Polish-Hungarian translators is low, especially in Germany...
             </p>
             <p className="text-lg py-2 leading-8 text-justify">
-              Fortunately, I have discovered a passion for front-end development beyond my studies. It all started in high school when
-              I built my very first website and realized my affinity for web development. Since then, I have been nurturing this passion and contemplating a professional career in the field.
+              Fortunately, I have discovered a passion for front-end development. It all started in high school when
+              I built my very first website. Since then, I have been considering a professional career in the field.
               Recently, I seized the opportunity to pursue my dream and successfully
-              completed a comprehensive full-stack web development program at Careerfoundry, further honing my skills and knowledge in this area.
+              completed a comprehensive full-stack web development program at Careerfoundry, honing my skills and knowledge in this area.
             </p>
             <p className="text-lg py-2 leading-8 text-justify">I love front-end development because it allows me to be creative, continuously learn, and solve problems.
               Collaborating with a team to build websites and web applications that have a direct impact on people's lives is rewarding, and the flexibility to work remotely provides a good work-life balance.
