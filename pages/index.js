@@ -72,7 +72,7 @@ export default function Home() {
               I love to translate books, but the demand for Polish-Hungarian translators is low. Especially in Germany...
             </p>
             <p className="text-lg py-2 leading-8 text-justify">
-              Luckily, I love (and am able) to do other things too! It was in high school when
+              Luckily, I like (and am able) to do other things too! It was in high school when
               I discovered my passion for front-end development after building my very first website,
               and I've been thinking about doing it professionally ever since.
               Recently, I took the opportunity to pursue this dream and completed a full-stack web development program at Careerfoundry.
