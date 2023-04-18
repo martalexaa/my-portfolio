@@ -31,9 +31,9 @@ export default function Home() {
 
         <section className="min-h-screen text-center p-5 md:p-4" id="home">
           <div className="text-center p-10">
-            <h2 className="text-4xl py-6 md:py-9 lg:py-10 md:text-5xl text-red-500 font-bold">Hello World!</h2>
+            <h2 className="text-4xl py-6 md:py-9 lg:py-10 md:text-5xl text-red-500 ">helloWorld</h2>
             <h3 className="text-xl md:text-2xl">I'm a web developer.
-              I love to create beautiful and functional apps and websites!</h3>
+              I love to create beautiful and functional things!</h3>
           </div>
           <div >
             <Image src={marta}
@@ -55,22 +55,23 @@ export default function Home() {
 
         <section id="about">
           <div className="lg:px-40 text-center">
-            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500 font-bold">
+            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500">
               ABOUT</h3>
             <h3 className="text-xl md:text-2xl px-5 py-5 text-sky-800 font-medium">
               My name is Marta. Let me introduce myself.👋</h3>
             <p className="text-lg py-2 leading-8 text-justify">
-              I've always had very diverse interests (from languages and poetry across to photography, art, natural sciences, politics, tech and more).
-              Probably that's why I enjoy learning new things.
-              <p className="text-lg py-2 leading-8 text-justify"></p>
+              I am a curious and open-minded Polish-Hungarian girl living in Berlin. I've always had very diverse interests (from languages and poetry across to photography, art, natural sciences, politics, tech and more).
+              Probably that's why I enjoy learning new things as well as creating products that are both visually appealing and functional.</p>
+            <p className="text-lg py-2 leading-8 text-justify">
               Besides my major in Slavic languages and literature I studied a bit of everything at the Faculty of Humanities,
               but later realized that there weren't many good job opportunities related to my studies.
-              I love to translate books, but the demand for Polish-Hungarian translators is low. Especially in Berlin.
+              I love to translate books, but the demand for Polish-Hungarian translators is low. Especially in Germany...
             </p>
             <p className="text-lg py-2 leading-8 text-justify">
               Luckily, I love (and am able) to do other things too! It was in high school when
               I discovered my passion for front-end development after building my very first website,
-              and I've been thinking about doing it professionally ever since. Recently, I completed a full-stack web development program at Careerfoundry.
+              and I've been thinking about doing it professionally ever since.
+              Recently, I took the opportunity to pursue this dream and completed a full-stack web development program at Careerfoundry.
             </p>
             <p className="text-lg py-2 leading-8 text-justify">I love front-end development because it allows me to be creative, continuously learn, and solve problems.
               Collaborating with a team to build websites and web applications that have a direct impact on people's lives is rewarding, and the flexibility to work remotely provides a good work-life balance.
@@ -127,7 +128,7 @@ export default function Home() {
 
         <section id="dev-skills">
 
-          <h3 className="text-3xl md:text-4xl text-center text-sky-800 font-bold pb-3 pt-5">My Toolbox </h3>
+          <h3 className="text-3xl md:text-4xl text-center text-sky-800 pb-3 pt-5">My Toolbox </h3>
           <div className="flex justify-center">
             <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-2/4">
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">html</div>
@@ -165,7 +166,7 @@ export default function Home() {
 
         <section id="work">
           <div>
-            <h3 className="text-4xl md:text-5xl py-20 text-center text-red-500 font-bold">WORK</h3>
+            <h3 className="text-4xl md:text-5xl py-20 text-center text-red-500">WORK</h3>
           </div>
           <div className="flex flex-col gap-2 py-2 lg:flex-row lg:flex-wrap text-white">
 
@@ -283,7 +284,7 @@ export default function Home() {
 
         <section id="contact">
           <div className="">
-            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 font-bold">CONTACT</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-10 text-center text-red-500 ">CONTACT</h3>
             <div className="p-30 text-center my-20 h-96">
               <h3 className="text-xl md:text-3xl p-5  text-sky-800 font-medium">Are you interested in working with me? Let's get in touch!</h3>
               <ul className="py-20 md:text-xl">
