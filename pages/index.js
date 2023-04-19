@@ -131,7 +131,7 @@ export default function Home() {
           </div>
           <h3 className="text-3xl md:text-4xl text-center text-sky-800 pb-3 pt-10">My Toolbox </h3>
           <div className="flex justify-center">
-            <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-2/4">
+            <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-11/12">
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">html</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">css</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">javascript</div>
@@ -160,7 +160,6 @@ export default function Home() {
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">pwa</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">spa</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">angular</div>
-              <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">trello</div>
             </div>
           </div>
         </section>
@@ -199,13 +198,13 @@ export default function Home() {
                 Designed to provide a user-friendly experience, the Movie App is a single-page, responsive web app for movie enthusiasts to easily access and manage their favorite movies.</p>
               <div className="flex justify-between gap-4">
                 <a href="https://martalexaa-movie-app.netlify.app/signup" target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">DEMO</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md lg:ml-20">DEMO</a>
                 <a href="https://github.com/martalexaa/myFlix-client"
                   target="blank"
                   className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CODE</a>
                 <Link href="/myflix_case_study"
                   target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CASE STUDY</Link>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md lg:mr-20">CASE STUDY</Link>
               </div>
             </div>
             <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
