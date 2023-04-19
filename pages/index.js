@@ -129,9 +129,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <h3 className="text-3xl md:text-4xl text-center text-sky-800 pb-3 pt-10">My Toolbox </h3>
           <div className="flex justify-center">
-            <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-11/12">
+            <div className="text-center flex flex-row flex-wrap justify-start mb-20 mt-8 lg:w-11/12">
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-600 text-white uppercase text-xl">html</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-600 text-white uppercase text-xl">css</div>
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-600 text-white uppercase text-xl">javascript</div>
