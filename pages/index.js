@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { MdDeveloperMode, MdWork, MdMenuBook } from 'react-icons/md';
+import { MdLaptopChromebook, MdOutlineWorkOutline, MdOutlineMenuBook } from 'react-icons/md';
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -32,7 +32,7 @@ export default function Home() {
 
         <section className="min-h-screen text-center  w-full h-full" id="home">
           <div className="text-center p-10">
-            <h2 className="text-4xl py-6 md:py-9 lg:py-10 md:text-5xl text-red-500 ">helloWorld</h2>
+            <h2 className="text-4xl py-6 md:py-9 lg:py-10 md:text-5xl text-red-500 tracking-wide">Hello World</h2>
             <h3 className="text-xl md:text-2xl pb-8 text-gray-600">I'm a web developer.
               I love to create beautiful and functional things!</h3>
           </div>
@@ -65,25 +65,23 @@ export default function Home() {
               My name is Marta. Let me introduce myself.</h3>
             <div className="text-gray-600">
               <p className="text-lg py-2 leading-8 text-justify">
-                I am a curious and open-minded Polish-Hungarian girl living in Berlin. I've always had very diverse interests (from languages and poetry across to photography, art, natural sciences, politics, tech and more).
-                Probably that's why I enjoy learning new things as well as creating products that are both visually appealing and functional.</p>
+                I'm a curious and open-minded Polish-Hungarian person living in Berlin. I have diverse interests, ranging from languages, poetry, photography, art, natural sciences, politics, and tech.
+                I enjoy learning new things and creating visually appealing and functional products.</p>
               <p className="text-lg py-2 leading-8 text-justify">
-                In addition to my major in Slavic languages and literature I studied a bit of everything at the Faculty of Humanities.
-                However, I came to realize that the job opportunities directly related to my studies were limited.
-                Although I enjoyed translating books, the demand for Polish-Hungarian translators is low, especially in Germany...
+                With a major in Slavic languages and literature, I also studied various subjects at the Faculty of Humanities. However,
+                I realized that job opportunities directly related to my studies were limited, especially as a Polish-Hungarian translator in Germany.
               </p>
               <p className="text-lg py-2 leading-8 text-justify">
-                Fortunately, I have discovered a passion for front-end development. It all started in high school when
-                I built my very first website. Since then, I have been considering a professional career in the field.
-                Recently, I seized the opportunity to pursue my dream and successfully
-                completed a comprehensive full-stack web development program at Careerfoundry, honing my skills and knowledge in this area.
+                I discovered my passion for front-end development during high school when I built my first website.
+                Since then, I have been considering a professional career in the field.
+                Recently, I completed a comprehensive full-stack web development program at Careerfoundry, honing my skills in this field.
               </p>
               <p className="text-lg py-2 leading-8 text-justify">I love front-end development because it allows me to be creative, continuously learn, and solve problems.
                 Collaborating with a team to build websites and web applications that have a direct impact on people's lives is rewarding, and the flexibility to work remotely provides a good work-life balance.
                 Overall, it is a fulfilling career that I am passionate about.
               </p>
               <p className="text-lg py-2 leading-8 text-justify">
-                So, here I am now, a certified web development enthusiast seeking a hybrid or home office full-time junior position in Berlin or remote work from anywhere. <a href="/files/Marta_Karaba_WebDev_CV.pdf"
+                Now, I'm a certified web development enthusiast seeking a full-time junior position in Berlin or remote work. <a href="/files/Marta_Karaba_WebDev_CV.pdf"
                   alt="Click here to download my CV in pdf format" target="_blank"
                   rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">Download my resume</a>
               </p>
@@ -91,7 +89,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
-              <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdDeveloperMode /></div>
+              <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdLaptopChromebook /></div>
               <h3 className="text-lg font-medium pt-8 pb-2  text-gray-600">
                 I am a certified developer
               </h3>
@@ -103,7 +101,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
-              <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdWork /></div>
+              <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdOutlineWorkOutline /></div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-gray-600">
                 I have experience
               </h3>
@@ -115,7 +113,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
-              <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdMenuBook /></div>
+              <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdOutlineMenuBook /></div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-gray-600">
                 I have a degree in Slavic languages
               </h3>
