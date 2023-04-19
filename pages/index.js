@@ -2,11 +2,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { MdLaptopChromebook, MdOutlineWorkOutline, MdOutlineMenuBook } from 'react-icons/md';
 import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-  AiFillMediumCircle
-} from "react-icons/ai";
+  FaGithubSquare,
+  FaLinkedin,
+  FaTwitterSquare,
+  FaMedium,
+} from "react-icons/fa";
+import { BsBook } from "react-icons/bs"
 import marta from "../public/marta-foto.jpg";
 import web1 from "../public/web-1.jpg";
 import web2 from "../public/web-2.jpg";
@@ -47,16 +48,16 @@ export default function Home() {
           <div className="text-4xl flex justify-center gap-10 pt-10 text-sky-800">
             <a href="https://github.com/martalexaa"
               target="blank"
-              className="hover:animate-pulse"><AiFillGithub /></a>
+              className="hover:animate-pulse"><FaGithubSquare /></a>
             <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/"
               target="blank"
-              className="hover:animate-pulse"><AiFillLinkedin /></a>
+              className="hover:animate-pulse"><FaLinkedin /></a>
             <a href="https://twitter.com/MartaKaraba"
               target="blank"
-              className="hover:animate-pulse"><AiFillTwitterCircle /></a>
+              className="hover:animate-pulse"><FaTwitterSquare /></a>
             <a href="https://medium.com/@martaalexandramcsaikaraba"
               target="blank"
-              className="hover:animate-pulse"><AiFillMediumCircle /></a>
+              className="hover:animate-pulse"><FaMedium /></a>
           </div>
         </section>
 
@@ -116,7 +117,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
-              <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdOutlineMenuBook /></div>
+              <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><BsBook /></div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-gray-600">
                 I have a degree in Slavic languages
               </h3>
@@ -128,7 +129,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <h3 className="text-3xl md:text-4xl text-center text-sky-800 pb-3 pt-5">My Toolbox </h3>
+          <h3 className="text-3xl md:text-4xl text-center text-sky-800 pb-3 pt-10">My Toolbox </h3>
           <div className="flex justify-center">
             <div className="text-center flex flex-row flex-wrap justify-start mb-8 lg:w-2/4">
               <div className="hover:animate-bounce m-1 p-2 flex-grow bg-gray-700 text-white uppercase text-xl">html</div>
@@ -293,19 +294,19 @@ export default function Home() {
               <li className="pb-4">+49 1773271140</li>
             </ul>
           </div>
-          <div className="text-4xl flex justify-center gap-10 text-sky-800 mb-10">
+          <div className="text-4xl flex justify-center gap-10 pt-10 text-sky-800 mb-10">
             <a href="https://github.com/martalexaa"
               target="blank"
-              className="hover:animate-pulse"><AiFillGithub /></a>
+              className="hover:animate-pulse"><FaGithubSquare /></a>
             <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/"
               target="blank"
-              className="hover:animate-pulse"><AiFillLinkedin /></a>
+              className="hover:animate-pulse"><FaLinkedin /></a>
             <a href="https://twitter.com/MartaKaraba"
               target="blank"
-              className="hover:animate-pulse"><AiFillTwitterCircle /></a>
+              className="hover:animate-pulse"><FaTwitterSquare /></a>
             <a href="https://medium.com/@martaalexandramcsaikaraba"
               target="blank"
-              className="hover:animate-pulse"><AiFillMediumCircle /></a>
+              className="hover:animate-pulse"><FaMedium /></a>
           </div>
         </section>
 
