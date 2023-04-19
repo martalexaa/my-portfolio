@@ -78,7 +78,7 @@ export default function Home() {
               <p className="text-lg py-2 leading-8 text-justify">
                 I discovered my passion for front-end development during high school when I built my first website.
                 Since then, I have been considering a professional career in the field.
-                Recently, I completed a comprehensive full-stack web development program at Careerfoundry, honing my skills in this field.
+                Recently, I completed a comprehensive full-stack web development program at Careerfoundry.
               </p>
               <p className="text-lg py-2 leading-8 text-justify">I love front-end development because it allows me to be creative, continuously learn, and solve problems.
                 Collaborating with a team to build websites and web applications that have a direct impact on people's lives is rewarding, and the flexibility to work remotely provides a good work-life balance.
