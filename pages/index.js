@@ -45,7 +45,7 @@ export default function Home() {
               alt="a photo of me"
               className="w-72 h-72 mx-auto rounded-full relative overflow-hidden md:w-72 md:h-72 lg:w-96 lg:h-96" />
           </div>
-          <div className="text-4xl flex justify-center gap-10 pt-10 text-sky-800">
+          <div className="text-4xl flex justify-center gap-10 pt-10 text-sky-700">
             <a href="https://github.com/martalexaa"
               target="blank"
               className="hover:animate-pulse"><FaGithubSquare /></a>
@@ -62,12 +62,23 @@ export default function Home() {
         </section>
 
         <section id="about" className="">
-          <div className="lg:px-40">
+          <div className="md:px-20 lg:px-80">
             <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500 tracking-wide">
               ABOUT</h3>
             <h3 className="text-xl md:text-2xl pb-8 text-gray-600 text-center">
               My name is Marta. Let me introduce myself.</h3>
-            <div className="text-gray-600">
+            <ul className="list-disc text-lg text-gray-600">
+              <li>I have diverse interests that range from highbrow poetry to lowbrow memes, and everything in between.</li>
+              <li>I may have a degree in Slavic languages, but unfortunately, job prospects as a Polish-Hungarian translator in Germany were as rare as a unicorn riding a unicycle.</li>
+              <li>Ever since I built my first website in high school, I've been hooked on front-end development – it's like creating visually appealing and functional art!</li>
+              <li>I recently completed a full-stack web development program at Careerfoundry, so now I'm certified.</li>
+              <li>I love the creativity, continuous learning, and problem-solving that comes with front-end development, not to mention the satisfaction of building apps and websites that actually impact people's lives.</li>
+              <li>I'm currently on the hunt for a junior web development position in Berlin or remote work.
+                I'm ready to put my skills to the test, learn, grow, and bring my Polish-Hungarian charm to the web development world! <a
+                  href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank"
+                  rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">Download my resume</a></li>
+            </ul>
+            <div className="text-gray-600 hidden">
               <p className="text-lg py-2 leading-8 text-justify">
                 I'm a curious and open-minded Polish-Hungarian person living in Berlin. I have diverse interests, ranging from languages, poetry, photography, art, natural sciences, politics, and tech.
                 I enjoy learning new things and creating visually appealing and functional products.</p>
@@ -91,7 +102,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="lg:flex gap-10">
+          <div className="lg:flex gap-10 lg:px-20">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdLaptopChromebook /></div>
               <h3 className="text-lg font-medium pt-8 pb-2  text-gray-600">
@@ -167,9 +178,9 @@ export default function Home() {
           <div className="text-center">
             <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-20 text-center text-red-500 tracking-wide">WORK</h3>
           </div>
-          <div className="flex flex-col gap-2 py-2 lg:flex-row lg:flex-wrap text-white">
+          <div className="flex flex-col gap-2 py-2 lg:flex-row lg:flex-wrap text-white lg:px-20">
 
-            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-600">
               <Image src={web1}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -181,12 +192,12 @@ export default function Home() {
                 specifying the number of events to display, and offline functionality that allows users to access cached data when there is no internet connection.</p>
               <div className="flex justify-between px-20">
                 <a href="https://martalexaa.github.io/meet/" target="blank"
-                  className="text-center cursor-pointer  border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">DEMO</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">DEMO</a>
                 <a href="https://github.com/martalexaa/meet" target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CODE</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-600">
               <Image src={web2}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -197,16 +208,16 @@ export default function Home() {
                 Designed to provide a user-friendly experience, the Movie App is a single-page, responsive web app for movie enthusiasts to easily access and manage their favorite movies.</p>
               <div className="flex justify-between gap-4">
                 <a href="https://martalexaa-movie-app.netlify.app/signup" target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md lg:ml-20">DEMO</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md lg:ml-20">DEMO</a>
                 <a href="https://github.com/martalexaa/myFlix-client"
                   target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CODE</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">CODE</a>
                 <Link href="/myflix_case_study"
                   target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md lg:mr-20">CASE STUDY</Link>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md lg:mr-20">CASE STUDY</Link>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-600">
               <Image src={web3}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -219,12 +230,12 @@ export default function Home() {
               <br></br>
               <div className="flex justify-between px-20">
                 <a href="https://martalexaa.github.io/pokedex-app" target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">DEMO</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">DEMO</a>
                 <a href="https://github.com/martalexaa/pokedex-app" target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CODE</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-600">
               <Image src={web4}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -236,13 +247,13 @@ export default function Home() {
               <div className="flex justify-between px-20">
                 <div className="flex justify-between px-20">
                   <a href="https://github.com/martalexaa/chat-app" target="blank"
-                    className="hidden text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CODE</a>
+                    className="hidden text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">CODE</a>
                 </div>
                 <a href="https://github.com/martalexaa/chat-app" target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CODE</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-600">
               <Image src={web5}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -254,13 +265,13 @@ export default function Home() {
               <div className="flex justify-between px-20">
                 <div className="flex justify-between px-20">
                   <a href="https://github.com/martalexaa/chat-app" target="blank"
-                    className="hidden text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CODE</a>
+                    className="hidden text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">CODE</a>
                 </div>
                 <a href="https://github.com/martalexaa/movie_api" target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CODE</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">CODE</a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-700">
+            <div className="basis-1/3 flex-1 p-4 rounded-xl bg-gray-600">
               <Image src={web6}
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -272,10 +283,10 @@ export default function Home() {
               <div className="flex justify-between px-20">
                 <div className="flex justify-between px-20">
                   <a href="https://github.com/martalexaa/chat-app" target="blank"
-                    className="hidden text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CODE</a>
+                    className="hidden text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">CODE</a>
                 </div>
                 <a href="https://github.com/martalexaa/my-portfolio" target="blank"
-                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl bg-red-500 hover:bg-red-700 rounded-md">CODE</a>
+                  className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">CODE</a>
               </div>
             </div>
 
@@ -292,7 +303,7 @@ export default function Home() {
               <li className="pb-4">+49 1773271140</li>
             </ul>
           </div>
-          <div className="text-4xl flex justify-center gap-10 pt-10 text-sky-800 mb-10">
+          <div className="text-4xl flex justify-center gap-10 pt-10 text-sky-700 mb-10">
             <a href="https://github.com/martalexaa"
               target="blank"
               className="hover:animate-pulse"><FaGithubSquare /></a>
