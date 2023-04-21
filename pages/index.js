@@ -65,16 +65,16 @@ export default function Home() {
           <div className="md:px-20 lg:px-80">
             <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500 tracking-wide">
               ABOUT</h3>
-            <h3 className="text-xl md:text-2xl pb-8 text-gray-600 text-center">
+            <h3 className="text-xl md:text-2xl pb-8 px-1 text-gray-600 text-center">
               My name is Marta. Let me introduce myself.</h3>
-            <ul className="list-disc text-lg text-gray-600">
-              <li>I have diverse interests that range from highbrow poetry to lowbrow memes, and everything in between.</li>
-              <li>I may have a degree in Slavic languages, but unfortunately, job prospects as a Polish-Hungarian translator in Germany were as rare as a unicorn riding a unicycle.</li>
-              <li>Ever since I built my first website in high school, I've been hooked on front-end development – it's like creating visually appealing and functional art!</li>
-              <li>I recently completed a full-stack web development program at Careerfoundry, so now I'm certified.</li>
-              <li>I love the creativity, continuous learning, and problem-solving that comes with front-end development, not to mention the satisfaction of building apps and websites that actually impact people's lives.</li>
-              <li>I'm currently on the hunt for a junior web development position in Berlin or remote work.
-                I'm ready to put my skills to the test, learn, grow, and bring my Polish-Hungarian charm to the web development world! <a
+            <ul className="text-lg text-gray-600">
+              <li className="pb-2">🎔 I have diverse interests that range from highbrow poetry to lowbrow memes, and everything in between.</li>
+              <li className="pb-2">🕮 I may have a degree in Slavic languages, but unfortunately, job prospects as a Polish-Hungarian translator in Germany were as rare as a unicorn riding a unicycle.</li>
+              <li className="pb-2">🗗 Ever since I built my first website in high school, I've been hooked on front-end development – it's like creating visually appealing and functional art!</li>
+              <li className="pb-2">🖳 I recently completed a full-stack web development program at Careerfoundry, so now I'm certified!</li>
+              <li className="pb-2">🖻 I love the creativity, continuous learning, and problem-solving that comes with front-end development, not to mention the satisfaction of building apps and websites that actually impact people's lives.</li>
+              <li>🛊 I'm currently on the hunt for a junior web development position in Berlin or remote work.
+                I'm ready to put my skills to the test, learn and grow. <a
                   href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank"
                   rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">Download my resume</a></li>
             </ul>
@@ -227,7 +227,6 @@ export default function Home() {
                 It loads data from an external API, allowing users to view a list of items, click on a list item to view more details, search for items, and use additional UI patterns such as modals. The app is formatted according to ESLint rules and is hosted on GitHub Pages,
                 compatible with popular web browsers.
               </p>
-              <br></br>
               <div className="flex justify-between px-20">
                 <a href="https://martalexaa.github.io/pokedex-app" target="blank"
                   className="text-center cursor-pointer border-2 border-solid border-white px-1 text-xl hover:bg-sky-700 rounded-md">DEMO</a>
@@ -258,7 +257,7 @@ export default function Home() {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                alt="a screenshot of my project md:text-lg" />
+                alt="a screenshot of my project" />
               <p className="py-5 text-justify md:text-lg">The myFlix Backend API is a secure Node.js and Express application that provides movie information to users. It follows REST architecture, includes user authentication and authorization with JWT, data validation, and data security features.
                 The API allows users to view and manage movies, directors, and genres. Tested with Postman, the API is hosted on GitHub and deployed to Render for easy access.
               </p>
