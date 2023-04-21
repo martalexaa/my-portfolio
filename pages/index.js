@@ -74,6 +74,7 @@ export default function Home() {
               <li className="pb-2">~ Ever since I built my first website in high school, I've been hooked on front-end development – it's like creating visually appealing and functional art!</li>
               <li className="pb-2">~ I recently completed a full-stack web development program at Careerfoundry, so now I'm certified!</li>
               <li className="pb-2">~ I love the creativity, continuous learning, and problem-solving that comes with front-end development, not to mention the satisfaction of building apps and websites that actually impact people's lives.</li>
+
               <li>~ I'm currently on the hunt for a junior web development position in Berlin or remote work.
                 I'm ready to put my skills to the test, learn and grow. <a
                   href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank"
