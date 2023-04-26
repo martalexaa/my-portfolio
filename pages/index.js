@@ -37,14 +37,17 @@ export default function Home() {
 
         <section className="min-h-screen text-center  w-full h-full" id="home">
           <div className="text-center p-10">
-            <h2 className="text-4xl py-6 md:py-9 lg:py-10 md:text-5xl text-red-500 tracking-wide">Hello World</h2>
-            <h3 className="text-xl md:text-2xl pb-8 text-gray-600">I'm a web developer.
-              I love to create beautiful and functional things!</h3>
+            <h2 className="text-4xl py-6 md:py-9 lg:py-30 md:text-5xl text-red-500 tracking-wide">Hello World</h2>
+            <h3 className="text-xl md:text-2xl pb-8 text-gray-600 lg:px-80">I'm Marta Karaba, a web developer
+              loving to create beautiful and functional things,
+              ready to put my skills to the test, learn and grow. <br />
+              <a href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank"
+                rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">Download my resume</a></h3>
           </div>
           <div >
             <Image src={marta}
               alt="a photo of me"
-              className="w-72 h-72 mx-auto rounded-full relative overflow-hidden md:w-72 md:h-72 lg:w-96 lg:h-96" />
+              className="w-60 h-60 mx-auto rounded-full relative overflow-hidden md:w-64 md:h-64 lg:w-80 lg:h-80" />
           </div>
           <div className="text-4xl flex justify-center gap-10 pt-10 text-sky-700">
             <a href="https://github.com/martalexaa"
@@ -63,23 +66,9 @@ export default function Home() {
         </section>
 
         <section id="about" className="">
-          <div className="md:px-20 lg:px-80">
+          <div className="md:px-20 lg:px-72">
             <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-10 text-center text-red-500 tracking-wide">
               ABOUT</h3>
-            <h3 className="text-xl md:text-2xl pb-8 px-1 text-gray-600 text-center">
-              My name is Marta. Let me introduce myself.</h3>
-            <ul className="text-lg text-gray-600">
-              <li className="pb-2">~ I have diverse interests that range from highbrow poetry to lowbrow memes, and everything in between.</li>
-              <li className="pb-2">~ I may have a degree in Slavic languages, but unfortunately, job prospects as a Polish-Hungarian translator in Germany were as rare as a unicorn riding a unicycle.</li>
-              <li className="pb-2">~ Ever since I built my first website in high school, I've been hooked on front-end development – it's like creating visually appealing and functional art!</li>
-              <li className="pb-2">~ I recently completed a full-stack web development program at Careerfoundry, so now I'm certified!</li>
-              <li className="pb-2">~ I love the creativity, continuous learning, and problem-solving that comes with front-end development, not to mention the satisfaction of building apps and websites that actually impact people's lives.</li>
-
-              <li>~ I'm currently on the hunt for a junior web development position in Berlin or remote work.
-                I'm ready to put my skills to the test, learn and grow. <a
-                  href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank"
-                  rel="noopener noreferrer" download className="text-red-500 cursor-pointer underline">Download my resume</a></li>
-            </ul>
             <div className="text-gray-600 hidden">
               <p className="text-lg py-2 leading-8 text-justify">
                 I'm a curious and open-minded Polish-Hungarian person living in Berlin. I have diverse interests, ranging from languages, poetry, photography, art, natural sciences, politics, and tech.
@@ -322,7 +311,6 @@ export default function Home() {
 
         <section>
           <div className="text-center text-gray-600">
-            <hr class="h-px border-0 w-full"></hr>
             <p className="text-xs">Created with Next.js and Tailwind CSS by Marta Karaba.</p>
             <Link href="/impressum" className="underline cursor-pointer">Impressum</Link>
           </div>
