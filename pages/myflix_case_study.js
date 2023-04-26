@@ -20,8 +20,8 @@ const MyflixCase = () => (
                 </li>
             </ul>
         </nav>
-        <main className="mt-10 lg:mx-56 leading-8">
-            <h1 className="text-4xl pt-20 pb-6 md:py-9 lg:py-10 md:text-5xl text-red-500 tracking-wide text-center">Case Study:
+        <main className="mt-10 mx-5 lg:mx-56 leading-8">
+            <h1 className="text-4xl pt-20 pb-10 lg:py-20 md:text-5xl text-red-500 tracking-wide text-center">Case Study:
                 <br />
                 Movie App
             </h1>
@@ -35,7 +35,7 @@ const MyflixCase = () => (
                         className="drop-shadow-md" />
                     <figcaption className="text-center mt-2">Figure 1. Users can add movies to their favorites by clicking the heart icons</figcaption>
                 </figure>
-                <h2 className="text-xl md:text-2xl pb-2 pt-10 font-semibold lg:pt-20">Overview:
+                <h2 className="text-xl md:text-2xl pb-2 pt-20 font-semibold">Overview:
                 </h2>
                 <p className="pb-10 lg:text-lg">The Movie App is a MERN web application that allows movie enthusiasts to access information about top-rated movies of all time.
                     Users can sign up, log in, update their data, delete their accounts, and choose their favorite movies which will be displayed in the profile view.
@@ -79,7 +79,7 @@ const MyflixCase = () => (
                     </figure>
                 </div>
 
-                <h2 className="text-xl md:text-2xl pb-2 pt-5 font-semibold">Tech Stack:</h2>
+                <h2 className="text-xl md:text-2xl pb-2 pt-20 lg:pt-10 font-semibold">Tech Stack:</h2>
                 <p className="lg:text-lg">The Movie App is built using the following technologies:</p>
                 <ul className="pb-10 list-disc pl-10 lg:text-lg">
                     <li>
@@ -107,11 +107,11 @@ const MyflixCase = () => (
                         <figcaption className="text-center mt-2">Figure 3. A single movie card</figcaption>
                     </figure>
                     <div className="flex-1">
-                        <h2 className="text-lg md:text-xl pb-2">Database
+                        <h2 className="text-lg md:text-xl pb-2 pt-10">Database
                         </h2>
                         <p className="pb-10 lg:text-lg"> I used MongoDB as the database for storing user and movie data. I choose a NoSQL data model because it provides more flexibility than relational databases.</p>
 
-                        <h2 className="text-lg md:text-xl pb-2">Backend:
+                        <h2 className="text-lg md:text-xl pb-2">Backend
                         </h2>
                         <p className="pb-2 lg:text-lg">For the backend development, I used Node.js and Express to create a RESTful API that interacts with the database. The API can be accessed via HTTP methods like GET or POST. To retrieve and store data in the database, CRUD operations are used. The API provides movie information in JSON format. For testing the endpoints, I used Postman.
                             To provide security, I implemented a JWT token-based authorization, and also added CORS, password hashing, and data validation.
@@ -120,7 +120,7 @@ const MyflixCase = () => (
                             className="text-red-500 cursor-pointer underline">
                             View the server-side code
                         </Link>
-                        <h2 className="text-lg md:text-xl pb-2 pt-10">Frontend:
+                        <h2 className="text-lg md:text-xl pb-2 pt-10">Frontend
                         </h2>
                         <p className="pb-10 lg:text-lg">After completing the API, I built the interface to interact with the server side. It is a single-page application (SPA), developed with React library, Redux for state management, and Bootstrap for styling and responsiveness. The views, such as the main view (displays all movies), movie view (shows information about one movie), login, signup, and profile view (includes a form to update user data), were implemented with the ability to interact with the API endpoints for fetching and saving data, user authentication, and profile management.
                         </p>
@@ -150,7 +150,7 @@ const MyflixCase = () => (
                     </figure>
                 </div>
 
-                <h2 className="text-xl md:text-2xl pb-8 pt-5 lg:pt-20 font-semibold">Challenges:
+                <h2 className="text-xl md:text-2xl pb-8 pt-20 font-semibold">Challenges:
                 </h2>
                 <p className="pb-2 lg:text-lg">The main challenge was gaining a solid understanding of how React works and managing the interaction between components. The component-based architecture requires a different approach compared to traditional HTML-based web development. I struggled with structuring the components correctly, passing data between them, and managing the state effectively.
                     Careerfoundry provided step-by-step instructions for creating the first components, and I felt like I understood React well. However, when I had to build the profile view from scratch, I suddenly felt lost.
@@ -181,7 +181,7 @@ const MyflixCase = () => (
                     </figure>
                 </div>
 
-                <h2 className="text-xl md:text-2xl pb-8 pt-5 lg:pt-20 font-semibold">Conclusion
+                <h2 className="text-xl md:text-2xl pb-8 pt-20 font-semibold">Conclusion
                 </h2>
                 <p className="pb-10 lg:text-lg lg:pb-20">Looking back, I am proud of how I overcame the challenges so that I was able to deliver my first MERN app. While thinking in React was not easy initially, diving into it and gaining a better understanding made it a fun and rewarding experience.
                 </p>
