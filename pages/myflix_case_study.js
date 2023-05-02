@@ -109,7 +109,7 @@ const MyflixCase = () => (
                             width={"100%"}
                             height={"100%"}
                             alt="screenshot of the movie app" />
-                        <figcaption className="text-center mt-2">Figure 4. Movie and user models</figcaption>
+                        <figcaption className="text-center mt-2">Figure 3. Movie and user models</figcaption>
                     </figure>
                     <figure className="flex-2/4">
                         <Image src={backend}
@@ -117,7 +117,7 @@ const MyflixCase = () => (
                             width={"100%"}
                             height={"100%"}
                             alt="screenshot of the movie app" />
-                        <figcaption className="text-center mt-2">Figure 5. Code snippet from the backend</figcaption>
+                        <figcaption className="text-center mt-2">Figure 4. Code snippet from the backend</figcaption>
                     </figure>
                 </div>
 
@@ -140,7 +140,7 @@ const MyflixCase = () => (
                             width={"100%"}
                             height={"100%"}
                             alt="screenshot of the movie app" />
-                        <figcaption className="text-center mt-2">Figure 6. Users can read about a movie in the movie view</figcaption>
+                        <figcaption className="text-center mt-2">Figure 5. Users can read about a movie in the movie view</figcaption>
                     </figure>
                     <figure className="flex-2/4">
                         <Image src={updatedata}
@@ -148,7 +148,7 @@ const MyflixCase = () => (
                             width={"100%"}
                             height={"100%"}
                             alt="screenshot of the movie app" />
-                        <figcaption className="text-center mt-2">Figure 7. Update data in the profile view</figcaption>
+                        <figcaption className="text-center mt-2">Figure 6. Update data in the profile view</figcaption>
                     </figure>
                 </div>
 
