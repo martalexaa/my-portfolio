@@ -49,39 +49,9 @@ const MyflixCase = () => (
                 <p className="pb-10 lg:text-lg">
                     The aim of the project was to build a full-stack application from scratch so that I can practice my newly acquired skills and add the final product to my portfolio.
                 </p>
-                <div className="lg:flex">
-                    <div className="flex-1/4 flex-col">
-                        <h2 className="text-xl md:text-2xl pb-5 font-semibold">Duration:
-                        </h2>
-                        <p className="pb-10 lg:text-lg">Approx. 2 months. It took long, because this was my first MERN application.
-                            I'm sure that next time it'll take half as long.
-                        </p>
-                        <h2 className="text-xl md:text-2xl pb-5 font-semibold">Primary Stakeholder:
-                        </h2>
-                        <p className="pb-10 lg:text-lg">Careerfoundry Full-Stack Web Development Program
-                        </p>
-                        <h2 className="text-xl md:text-2xl pb-2 font-semibold">Credits:
-                        </h2>
-                        <ul className="pb-10 lg:text-lg">
-                            <li>Role: Full-Stack Web Developer</li>
-                            <li>Mentor: Aheebwa Ramadhan</li>
-                            <li>Tutor: Tonny Ntambaazi</li>
-                        </ul>
-                    </div>
-
-                    <figure className="flex-3/4">
-                        <Image src={mainview}
-                            className="m-2 drop-shadow-md"
-                            width={"100%"}
-                            height={"100%"}
-                            alt="screenshot of the movie app" />
-                        <figcaption className="text-center mt-2">Figure 2. The main view</figcaption>
-                    </figure>
-                </div>
-
-                <h2 className="text-xl md:text-2xl pb-2 pt-20 lg:pt-10 font-semibold">Tech Stack:</h2>
+                <h2 className="text-xl md:text-2xl pb-2 font-semibold">Tech Stack:</h2>
                 <p className="lg:text-lg">The Movie App is built using the following technologies:</p>
-                <ul className="pb-10 list-disc pl-10 lg:text-lg">
+                <ul className="pb-10 list-disc pl-10 lg:text-lg lg:pb-20">
                     <li>
                         Database: MongoDB, a noSQL (or non-relational) database.
 
@@ -93,40 +63,41 @@ const MyflixCase = () => (
                         Back-end: Node.js and Express for building the server-side API, and MongoDB as the database for storing movie data and user profiles.
                     </li>
                 </ul>
-                <h2 className="text-xl md:text-2xl pb-2 pt-5 font-semibold">Development Process:
-                </h2>
-                <p className="pb-10 lg:text-lg">First, I needed to get familiar with the project requirements outlined by Careerfoundry, including the user stories, features, and technical requirements. I started with the server side by setting up the database.</p>
-                <div className="lg:flex">
-                    <figure className="flex-1 p-2">
-                        <Image
-                            src={card}
+                <div className="grid">
+                    <figure className="justify-self-center">
+                        <Image src={mainview}
+                            className="m-2 drop-shadow-md"
                             width={"100%"}
                             height={"100%"}
-                            alt="screenshot of the movie app"
-                            className="drop-shadow-md" />
-                        <figcaption className="text-center mt-2">Figure 3. A single movie card</figcaption>
+                            alt="screenshot of the movie app" />
+                        <figcaption className="text-center mt-2">Figure 2. The main view</figcaption>
                     </figure>
-                    <div className="flex-1">
-                        <h2 className="text-lg md:text-xl pb-2 pt-10">Database
-                        </h2>
-                        <p className="pb-10 lg:text-lg"> I used MongoDB as the database for storing user and movie data. I choose a NoSQL data model because it provides more flexibility than relational databases.</p>
-
-                        <h2 className="text-lg md:text-xl pb-2">Backend
-                        </h2>
-                        <p className="pb-2 lg:text-lg">For the backend development, I used Node.js and Express to create a RESTful API that interacts with the database. The API can be accessed via HTTP methods like GET or POST. To retrieve and store data in the database, CRUD operations are used. The API provides movie information in JSON format. For testing the endpoints, I used Postman.
-                            To provide security, I implemented a JWT token-based authorization, and also added CORS, password hashing, and data validation.
-                        </p>
-                        <Link href="https://github.com/martalexaa/movie_api"
-                            className="text-red-500 cursor-pointer underline">
-                            View the server-side code
-                        </Link>
-                        <h2 className="text-lg md:text-xl pb-2 pt-10">Frontend
-                        </h2>
-                        <p className="pb-10 lg:text-lg">After completing the API, I built the interface to interact with the server side. It is a single-page application (SPA), developed with React library, Redux for state management, and Bootstrap for styling and responsiveness. The views, such as the main view (displays all movies), movie view (shows information about one movie), login, signup, and profile view (includes a form to update user data), were implemented with the ability to interact with the API endpoints for fetching and saving data, user authentication, and profile management.
-                        </p>
-                    </div>
                 </div>
-                <h2 className="text-lg md:text-xl pb-2 lg:pt-10">Deployment:
+                <h2 className="text-xl md:text-2xl pb-2 pt-5 lg:pt-20 font-semibold">Development Process:
+                </h2>
+                <p className="pb-10 lg:text-lg">First, I needed to get familiar with the project requirements outlined by Careerfoundry, including the user stories, features, and technical requirements. I started with the server side by setting up the database.</p>
+                <h2 className="text-lg md:text-xl pb-2">Database
+                </h2>
+                <p className="pb-10 lg:text-lg"> I used MongoDB as the database for storing user and movie data. I choose a noSQL data model because it provides more flexibility than relational databases.</p>
+
+                <h2 className="text-lg md:text-xl pb-2">Backend
+                </h2>
+                <p className="pb-2 lg:text-lg">For the backend development, I used Node.js and Express to create a RESTful API that interacts with the database. The API can be accessed via HTTP methods like GET or POST. To retrieve and store data in the database, CRUD operations are used. The API provides movie information in JSON format. For testing the endpoints, I used Postman.
+                    To provide security, I implemented a JWT token-based authorization, and also added CORS, password hashing, and data validation.
+                </p>
+                <Link href="https://github.com/martalexaa/movie_api"
+                    className="text-red-500 cursor-pointer underline">
+                    View the server-side code
+                </Link>
+                <h2 className="text-lg md:text-xl pb-2 pt-10">Frontend
+                </h2>
+                <p className="pb-2 lg:text-lg">After completing the API, I built the interface to interact with the server side. It is a single-page application (SPA), developed with React library, Redux for state management, and Bootstrap for styling and responsiveness. The views, such as the main view (displays all movies), movie view (shows information about one movie), login, signup, and profile view (includes a form to update user data), were implemented with the ability to interact with the API endpoints for fetching and saving data, user authentication, and profile management.
+                </p>
+                <Link href="https://github.com/martalexaa/myFlix-client"
+                    className="text-red-500 cursor-pointer underline">
+                    View the client-side code
+                </Link>
+                <h2 className="text-lg md:text-xl pb-2 pt-10">Deployment:
                 </h2>
                 <p className="pb-5 lg:pb-20 lg:text-lg">The Movie App was deployed on Netlify, a popular hosting service for web applications, making it accessible online for users.
                 </p>
@@ -156,7 +127,7 @@ const MyflixCase = () => (
                     Careerfoundry provided step-by-step instructions for creating the first components, and I felt like I understood React well. However, when I had to build the profile view from scratch, I suddenly felt lost.
                 </p>
                 <p className="pb-2 lg:text-lg">
-                    I had to push myself to step out of my comfort zone and dive deep into understanding React concepts and syntax. With determination and the support of my mentor and, I gradually gained confidence in my abilities. I learned to break down complex problems into smaller, manageable tasks and approached them systematically.
+                    I had to push myself to step out of my comfort zone and dive deep into understanding React concepts and syntax. With determination and the support of my mentor and tutor, I gradually gained confidence in my abilities. I learned to break down complex problems into smaller, manageable tasks and approached them systematically.
                 </p>
                 <p className="pb-5 lg:pb-20 lg:text-lg">
                     As a result, I successfully implemented all the views and completed the achievement.
@@ -183,8 +154,18 @@ const MyflixCase = () => (
 
                 <h2 className="text-xl md:text-2xl pb-8 pt-20 font-semibold">Conclusion
                 </h2>
-                <p className="pb-10 lg:text-lg lg:pb-20">Looking back, I am proud of how I overcame the challenges so that I was able to deliver my first MERN app. While thinking in React was not easy initially, diving into it and gaining a better understanding made it a fun and rewarding experience.
+                <p className="pb-10 lg:text-lg">Looking back, I am proud of how I overcame the challenges so that I was able to deliver my first MERN app. While thinking in React was not easy initially, diving into it and gaining a better understanding made it a fun and rewarding experience.
                 </p>
+            </div>
+
+            <div>
+                <h2 className="text-xl md:text-2xl pb-2 font-semibold">Credits:
+                </h2>
+                <ul className="pb-10 lg:text-lg">
+                    <li>Role: Full-Stack Web Developer</li>
+                    <li>Mentor: Aheebwa Ramadhan</li>
+                    <li>Tutor: Tonny Ntambaazi</li>
+                </ul>
             </div>
 
             <div className="flex justify-between gap-4 px-10 lg:px-56 pb-20 pt-10 text-gray-600">

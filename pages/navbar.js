@@ -13,26 +13,34 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleMenuItemClick = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <nav className="py-3 lg:mb-12 flex justify-end lg:mr-5 bg-gray-600 opacity-80 fixed top-0 w-full z-10" >
             <ul className={`lg:flex text-white drop-shadow-lg opacity-100 ${isMenuOpen ? 'block' : 'hidden'}`}>
                 <li className="mr-6">
-                    <Link to="home" smooth={true} duration={500} className="cursor-pointer text-xl">
+                    <Link to="home" smooth={true} duration={500} className="cursor-pointer text-xl"
+                        onClick={handleMenuItemClick}>
                         HOME
                     </Link>
                 </li>
                 <li className="mr-6">
-                    <Link to="about" smooth={true} duration={500} className="cursor-pointer text-xl">
+                    <Link to="about" smooth={true} duration={500} className="cursor-pointer text-xl"
+                        onClick={handleMenuItemClick}>
                         ABOUT
                     </Link>
                 </li>
                 <li className="mr-6">
-                    <Link to="work" smooth={true} duration={500} className="cursor-pointer text-xl">
+                    <Link to="work" smooth={true} duration={500} className="cursor-pointer text-xl"
+                        onClick={handleMenuItemClick}>
                         WORK
                     </Link>
                 </li>
                 <li className="mr-6">
-                    <Link to="contact" smooth={true} duration={500} className="cursor-pointer text-xl">
+                    <Link to="contact" smooth={true} duration={500} className="cursor-pointer text-xl"
+                        onClick={handleMenuItemClick}>
                         CONTACT
                     </Link>
                 </li>

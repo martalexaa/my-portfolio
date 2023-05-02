@@ -7,7 +7,7 @@ import {
   FaTwitterSquare,
   FaMedium,
 } from "react-icons/fa";
-import { VscDebugBreakpointFunctionUnverified } from "react-icons/vsc"
+import { IoMdHeartEmpty } from "react-icons/io"
 import { BsBook } from "react-icons/bs"
 import marta from "../public/marta-foto.jpg";
 import web1 from "../public/web-1.jpg";
@@ -93,41 +93,53 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="lg:flex gap-10 lg:px-20">
+          <div className="lg:flex gap-2 lg:px-20">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdLaptopChromebook /></div>
               <h3 className="text-lg font-medium pt-8 pb-2  text-gray-600">
-                I am a certified developer
+                Certified in Full-Stack
               </h3>
               <p className="py-2 text-justify text-gray-600">
                 I completed a six-month full-stack web development course with the help of a tutor and mentor.
                 This experience gave me a solid foundation in essential web technologies like HTML, CSS, and JavaScript, as well as the understanding of advanced tools like the MERN stack.
                 I also learned about agile methodology and practiced soft and technical skills during the course like problem solving and debugging.
-                Becoming a web developer has been an exciting journey that I truly enjoyed and feel passionate about.
+                Becoming a web developer has been an exciting journey that I truly enjoyed.
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdOutlineWorkOutline /></div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-gray-600">
-                I have experience
+                Transferable Skills
               </h3>
               <p className="py-2 text-justify text-gray-600">
                 As a freelance translator, I have honed my ability to meet deadlines and work independently, ensuring timely delivery of projects.
                 I have also gained valuable experience in customer service within the e-commerce industry, where I was part of a multinational team.
-                These roles have equipped me with transferable skills such as effective communication, being accountable for my work, managing my time efficiently,
+                These roles have equipped me with skills such as communication, being accountable for my work,
                 paying attention to detail, exhibiting patience, and adopting a user-centric mindset.
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><BsBook /></div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-gray-600">
-                I have a degree in Slavic languages
+                Life-Long Learning
               </h3>
               <p className="py-2 text-justify text-gray-600">
                 I've always made learning a priority by studying and acquiring new skills throughout my life.
                 My experience with various spoken languages has provided me with a strong foundation in comprehending the structure and syntax of programming languages more effectively.
                 Additionally, my academic background has equipped me with the ability to do research on my own and evaluate information critically.
                 It also nurtures my creativity in finding innovative solutions to complex technical problems.
+              </p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+              <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><IoMdHeartEmpty /></div>
+              <h3 className="text-lg font-medium pt-8 pb-2 text-gray-600">
+                Passion for Front-End
+              </h3>
+              <p className="py-2 text-justify text-gray-600">
+                Although I have gained skills in both front-end and back-end development, I have a personal preference for the front-end aspect of web development.
+                This is because I enjoy the visual and creative aspects of designing the user interface (UI) and user experience (UX) of a website.
+                To further improve my skills in this area, I have taken the initiative to educate myself on UI principles and other design-related topics.
+                I find learning about these topics fascinating and fulfilling.
               </p>
             </div>
           </div>
