@@ -39,8 +39,7 @@ export default function Home() {
           <div className="text-center p-10">
             <h2 className="text-4xl mt-10 pb-6 md:py-9 lg:py-30 md:text-5xl text-gray-600 tracking-wide">Hello World</h2>
             <h3 className="text-xl md:text-2xl pb-3 text-gray-600 lg:px-80">I'm <strong>Marta Karaba</strong>, a web developer
-              who loves to create beautiful and functional things,
-              ready to put my skills to the test, learn and grow. <br />
+              who loves to create beautiful and functional things. <br />
               <a href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank"
                 rel="noopener noreferrer" download className="text-sky-700 cursor-pointer underline">Download my resume</a></h3>
           </div>
@@ -179,7 +178,7 @@ export default function Home() {
 
         <section id="work" className="">
           <div className="text-center">
-            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-20 text-center text-gray-600 tracking-wide">Projects</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pb-20 text-center text-gray-600 tracking-wide">Projects</h3>
           </div>
           <div className="flex flex-col gap-2 py-2 lg:flex-row lg:flex-wrap text-gray-600 lg:px-20 pb-10 ">
 
@@ -296,7 +295,7 @@ export default function Home() {
         </section>
 
         <section id="contact">
-          <h3 className="text-4xl md:text-5xl pt-10 text-center text-gray-600 tracking-wide">Contact</h3>
+          <h3 className="text-4xl md:text-5xl pt-20 text-center text-gray-600 tracking-wide">Contact</h3>
           <div className="p-30 text-center py-10">
             <h3 className="text-xl md:text-2xl pt-10 mt-10 pb-5  text-gray-600">Are you interested in working with me? Let's get in touch.</h3>
             <ul className="pt-20 mt-10 pb-10 md:text-xl text-gray-600">
