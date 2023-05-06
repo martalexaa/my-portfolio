@@ -35,10 +35,10 @@ export default function Home() {
       <Navbar />
       <main className="mx-2 md:mx-5 lg:mx-30">
 
-        <section className="min-h-screen text-center  w-full h-full" id="home">
+        <section className="min-h-screen text-center w-full h-full " id="home">
           <div className="text-center p-10">
-            <h2 className="text-4xl md:mt-10 pb-6 md:py-9 lg:py-30 md:text-5xl text-red-500 tracking-wide">Hello World</h2>
-            <h3 className="text-xl md:text-2xl pb-8 text-gray-600 lg:px-80">I'm Marta Karaba, a web developer
+            <h2 className="text-4xl mt-10 pb-6 md:py-9 lg:py-30 md:text-5xl text-red-500 tracking-wide">Hello World</h2>
+            <h3 className="text-xl md:text-2xl pb-3 text-gray-600 lg:px-80">I'm Marta Karaba, a web developer
               loving to create beautiful and functional things,
               ready to put my skills to the test, learn and grow. <br />
               <a href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank"
@@ -49,7 +49,7 @@ export default function Home() {
               alt="a photo of me"
               className="w-60 h-60 mx-auto rounded-full relative overflow-hidden md:w-64 md:h-64 lg:w-80 lg:h-80" />
           </div>
-          <div className="text-4xl flex justify-center gap-10 pt-10 text-sky-700">
+          <div className="text-4xl flex justify-center gap-10 pt-5 text-sky-700">
             <a href="https://github.com/martalexaa"
               target="blank"
               className="hover:animate-pulse"><FaGithubSquare /></a>
@@ -67,8 +67,8 @@ export default function Home() {
 
         <section id="about" className="">
           <div className="md:px-20 lg:px-72">
-            <h3 className="text-4xl md:text-5xl pt-5 pb-5 md:pt-20 md:pb-10 text-center text-red-500 tracking-wide">
-              ABOUT</h3>
+            <h3 className="text-4xl md:text-5xl pb-5 pt-20 md:pb-10 text-center text-red-500 tracking-wide">
+              About</h3>
             <div className="text-gray-600 hidden">
               <p className="text-lg py-2 leading-8 text-justify">
                 I'm a curious and open-minded Polish-Hungarian person living in Berlin. I have diverse interests, ranging from languages, poetry, photography, art, natural sciences, politics, and tech.
@@ -179,7 +179,7 @@ export default function Home() {
 
         <section id="work" className="">
           <div className="text-center">
-            <h3 className="text-4xl md:text-5xl pt-5 pb-5 md:pt-20 md:pb-20 text-center text-red-500 tracking-wide">PROJECTS</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pt-20 md:pb-20 text-center text-red-500 tracking-wide">Projects</h3>
           </div>
           <div className="flex flex-col gap-2 py-2 lg:flex-row lg:flex-wrap text-white lg:px-20 pb-10 ">
 
@@ -296,7 +296,7 @@ export default function Home() {
         </section>
 
         <section id="contact">
-          <h3 className="text-4xl md:text-5xl pt-5 text-center text-red-500 tracking-wide">CONTACT</h3>
+          <h3 className="text-4xl md:text-5xl pt-5 text-center text-red-500 tracking-wide">Contact</h3>
           <div className="p-30 text-center my-10 h-96">
             <h3 className="text-xl md:text-2xl p-5  text-gray-600">Are you interested in working with me? Let's get in touch.</h3>
             <ul className="pt-20 pb-10 md:text-xl text-gray-600">

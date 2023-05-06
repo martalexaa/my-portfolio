@@ -10,12 +10,12 @@ const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-gray-600 shadow md:fixed md:top-0 md:z-10">
+        <nav className="w-full bg-gray-600 shadow top-0 z-10 fixed">
             <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to="home">
-                            <h2 className="text-2xl text-white font-bold cursor-pointer">Marta Karaba</h2>
+                            <h2 className="text-2xl text-white font-bold cursor-pointer">| M K |</h2>
                         </Link>
                         <div className="md:hidden">
                             <button
@@ -57,32 +57,32 @@ const Navbar = () => {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
+                        className={`flex-1 justify-self-center md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
                             }`}
                     >
-                        <div className="items-center justify-center md:flex md:space-x-6 md:space-y-0">
-                            <div className="text-white cursor-pointer text-lg md:text-xl hover:bg-black mx-100 my-3 p-3 rounded">
+                        <div className="items-center justify-center md:flex md:space-x-6 md:space-y-0 divide-y md:divide-y-0">
+                            <div className="text-white cursor-pointer text-lg md:text-xl p-3 hover:text-gray-200">
                                 <Link to="home" smooth={true} duration={500} >
                                     <div classname="mx-100 my-2">
                                         Home
                                     </div>
                                 </Link>
                             </div>
-                            <div className="text-white cursor-pointer text-lg md:text-xl hover:bg-black mx-100 my-3 p-3 rounded">
-                                <Link to="about" smooth={true} duration={500}>
+                            <div className="text-white cursor-pointer text-lg md:text-xl p-3 hover:text-gray-200">
+                                <Link to="about" smooth={true} duration={500} >
                                     <div classname="mx-100 my-2">
                                         About
                                     </div>
                                 </Link>
                             </div>
-                            <div className="text-white cursor-pointer text-lg md:text-xl hover:bg-black mx-100 my-3 p-3 rounded">
-                                <Link to="work" smooth={true} duration={500}>
+                            <div className="text-white cursor-pointer text-lg md:text-xl p-3 hover:text-gray-200">
+                                <Link to="work" smooth={true} duration={500} >
                                     <div classname="mx-100 my-2">
                                         Projects
                                     </div>
                                 </Link>
                             </div>
-                            <div className="text-white cursor-pointer text-lg md:text-xl hover:bg-black mx-100 my-3 p-3 rounded">
+                            <div className="text-white cursor-pointer text-lg md:text-xl p-3 hover:text-gray-200">
                                 <Link to="contact" smooth={true} duration={500}>
                                     <div classname="mx-100 my-2">
                                         Contact
