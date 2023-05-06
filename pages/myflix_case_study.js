@@ -20,8 +20,8 @@ const MyflixCase = () => (
                 </li>
             </ul>
         </nav>
-        <main className="mt-10 mx-5 lg:mx-56 leading-8">
-            <h1 className="text-4xl pt-20 pb-10 lg:py-20 md:text-5xl text-red-500 tracking-wide text-center">Case Study:
+        <main className="mt-10 mx-5 lg:mx-56 leading-8 text-gray-600">
+            <h1 className="text-4xl pt-20 pb-10 lg:py-20 md:text-5xl  tracking-wide text-center">Case Study:
                 <br />
                 Movie App
             </h1>
@@ -86,7 +86,7 @@ const MyflixCase = () => (
                     To provide security, I implemented a JWT token-based authorization, and also added CORS, password hashing, and data validation.
                 </p>
                 <Link href="https://github.com/martalexaa/movie_api"
-                    className="text-red-500 cursor-pointer underline">
+                    className="text-sky-700 cursor-pointer underline">
                     View the server-side code
                 </Link>
                 <h2 className="text-lg md:text-xl pb-2 pt-10">Frontend
@@ -94,7 +94,7 @@ const MyflixCase = () => (
                 <p className="pb-2 lg:text-lg">After completing the API, I built the interface to interact with the server side. It is a single-page application (SPA), developed with React library, Redux for state management, and Bootstrap for styling and responsiveness. The views, such as the main view (displays all movies), movie view (shows information about one movie), login, signup, and profile view (includes a form to update user data), were implemented with the ability to interact with the API endpoints for fetching and saving data, user authentication, and profile management.
                 </p>
                 <Link href="https://github.com/martalexaa/myFlix-client"
-                    className="text-red-500 cursor-pointer underline">
+                    className="text-sky-700 cursor-pointer underline">
                     View the client-side code
                 </Link>
                 <h2 className="text-lg md:text-xl pb-2 pt-10">Deployment:
@@ -170,14 +170,14 @@ const MyflixCase = () => (
 
             <div className="flex justify-between gap-4 px-10 lg:px-56 pb-20 pt-10 text-gray-600">
                 <a href="https://martalexaa-movie-app.netlify.app/signup" target="blank"
-                    className="text-center cursor-pointer border-2 border-solid border-gray-600 px-1 text-xl hover:bg-sky-700 hover:text-white rounded-md lg:ml-20">DEMO
+                    className="text-gray-600 text-center cursor-pointer border-2 border-solid border-gray-500 px-1 text-xl hover:bg-sky-700 hover:text-white hover:border-white rounded-md">DEMO
                 </a>
                 <a href="https://github.com/martalexaa/myFlix-client"
                     target="blank"
-                    className="text-center cursor-pointer border-2 border-solid border-gray-600 px-1 text-xl hover:bg-sky-700 hover:text-white rounded-md">CODE
+                    className="text-gray-600 text-center cursor-pointer border-2 border-solid border-gray-500 px-1 text-xl hover:bg-sky-700 hover:text-white hover:border-white rounded-md">CODE
                 </a>
                 <Link href="/"
-                    className="text-center cursor-pointer border-2 border-solid border-gray-600 px-1 text-xl hover:bg-sky-700 hover:text-white rounded-md lg:mr-20">BACK
+                    className="text-gray-600 text-center cursor-pointer border-2 border-solid border-gray-500 px-1 text-xl hover:bg-sky-700 hover:text-white hover:border-white rounded-md">BACK
                 </Link>
             </div>
 

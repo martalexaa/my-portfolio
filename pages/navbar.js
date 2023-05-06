@@ -8,13 +8,14 @@ const Navbar = () => {
     };
 
     const [navbar, setNavbar] = useState(false);
+    const [activeNavItem, setActiveNavItem] = useState("");
 
     return (
         <nav className="w-full bg-gray-600 shadow top-0 z-10 fixed">
             <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <Link to="home">
+                        <Link to="home" smooth={true} duration={500} onClick={() => setNavbar(false)}>
                             <h2 className="text-2xl text-white font-bold cursor-pointer">| M K |</h2>
                         </Link>
                         <div className="md:hidden">
@@ -61,29 +62,30 @@ const Navbar = () => {
                             }`}
                     >
                         <div className="items-center justify-center md:flex md:space-x-6 md:space-y-0 divide-y md:divide-y-0">
-                            <div className="text-white cursor-pointer text-lg md:text-xl p-3 hover:text-gray-200">
-                                <Link to="home" smooth={true} duration={500} >
+                            <div className="text-white cursor-pointer text-lg md:text-2xl p-3 hover:text-gray-200">
+                                <Link to="home" smooth={true} duration={500}
+                                    onClick={() => setNavbar(false)}>
                                     <div classname="mx-100 my-2">
                                         Home
                                     </div>
                                 </Link>
                             </div>
-                            <div className="text-white cursor-pointer text-lg md:text-xl p-3 hover:text-gray-200">
-                                <Link to="about" smooth={true} duration={500} >
+                            <div className="text-white cursor-pointer text-lg md:text-2xl p-3 hover:text-gray-200">
+                                <Link to="about" smooth={true} duration={500} onClick={() => setNavbar(false)}>
                                     <div classname="mx-100 my-2">
                                         About
                                     </div>
                                 </Link>
                             </div>
-                            <div className="text-white cursor-pointer text-lg md:text-xl p-3 hover:text-gray-200">
-                                <Link to="work" smooth={true} duration={500} >
+                            <div className="text-white cursor-pointer text-lg md:text-2xl p-3 hover:text-gray-200">
+                                <Link to="work" smooth={true} duration={500} onClick={() => setNavbar(false)}>
                                     <div classname="mx-100 my-2">
                                         Projects
                                     </div>
                                 </Link>
                             </div>
-                            <div className="text-white cursor-pointer text-lg md:text-xl p-3 hover:text-gray-200">
-                                <Link to="contact" smooth={true} duration={500}>
+                            <div className="text-white cursor-pointer text-lg md:text-2xl p-3 hover:text-gray-200">
+                                <Link to="contact" smooth={true} duration={500} onClick={() => setNavbar(false)}>
                                     <div classname="mx-100 my-2">
                                         Contact
                                     </div>
