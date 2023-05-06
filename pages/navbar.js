@@ -7,49 +7,90 @@ const Navbar = () => {
         scroll.scrollToTop();
     };
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const handleMenuToggle = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-
-    const handleMenuItemClick = () => {
-        setIsMenuOpen(false);
-    };
+    const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="py-3 lg:mb-12 flex justify-end lg:mr-5 bg-gray-600 opacity-80 fixed top-0 w-full z-10" >
-            <ul className={`lg:flex text-white drop-shadow-lg opacity-100 ${isMenuOpen ? 'block' : 'hidden'}`}>
-                <li className="mr-6">
-                    <Link to="home" smooth={true} duration={500} className="cursor-pointer text-xl"
-                        onClick={handleMenuItemClick}>
-                        HOME
-                    </Link>
-                </li>
-                <li className="mr-6">
-                    <Link to="about" smooth={true} duration={500} className="cursor-pointer text-xl"
-                        onClick={handleMenuItemClick}>
-                        ABOUT
-                    </Link>
-                </li>
-                <li className="mr-6">
-                    <Link to="work" smooth={true} duration={500} className="cursor-pointer text-xl"
-                        onClick={handleMenuItemClick}>
-                        WORK
-                    </Link>
-                </li>
-                <li className="mr-6">
-                    <Link to="contact" smooth={true} duration={500} className="cursor-pointer text-xl"
-                        onClick={handleMenuItemClick}>
-                        CONTACT
-                    </Link>
-                </li>
-            </ul>
-            <div id="hamburger" className="flex pr-2 lg:hidden" onClick={handleMenuToggle}>
-                <div className="space-y-2">
-                    <span className="block w-8 h-0.5 bg-white animate-pulse"></span>
-                    <span className="block w-8 h-0.5 bg-white animate-pulse"></span>
-                    <span className="block w-8 h-0.5 bg-white animate-pulse"></span>
+        <nav className="w-full bg-gray-600 shadow md:fixed md:top-0 md:z-10">
+            <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+                <div>
+                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                        <Link to="home">
+                            <h2 className="text-2xl text-white font-bold cursor-pointer">Marta Karaba</h2>
+                        </Link>
+                        <div className="md:hidden">
+                            <button
+                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                onClick={() => setNavbar(!navbar)}
+                            >
+                                {navbar ? (
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="w-6 h-6 text-white"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                ) : (
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="w-6 h-6 text-white"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        strokeWidth={2}
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="M4 6h16M4 12h16M4 18h16"
+                                        />
+                                    </svg>
+                                )}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
+                            }`}
+                    >
+                        <div className="items-center justify-center md:flex md:space-x-6 md:space-y-0">
+                            <div className="text-white cursor-pointer text-lg md:text-xl hover:bg-black mx-100 my-3 p-3 rounded">
+                                <Link to="home" smooth={true} duration={500} >
+                                    <div classname="mx-100 my-2">
+                                        Home
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="text-white cursor-pointer text-lg md:text-xl hover:bg-black mx-100 my-3 p-3 rounded">
+                                <Link to="about" smooth={true} duration={500}>
+                                    <div classname="mx-100 my-2">
+                                        About
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="text-white cursor-pointer text-lg md:text-xl hover:bg-black mx-100 my-3 p-3 rounded">
+                                <Link to="work" smooth={true} duration={500}>
+                                    <div classname="mx-100 my-2">
+                                        Projects
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="text-white cursor-pointer text-lg md:text-xl hover:bg-black mx-100 my-3 p-3 rounded">
+                                <Link to="contact" smooth={true} duration={500}>
+                                    <div classname="mx-100 my-2">
+                                        Contact
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
