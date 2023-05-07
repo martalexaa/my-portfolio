@@ -35,38 +35,41 @@ export default function Home() {
       <Navbar />
       <main className="mx-2 md:mx-5 lg:mx-30">
 
-        <section className="min-h-screen text-center w-full h-full " id="home">
-          <div className="text-center p-10">
-            <h2 className="text-4xl mt-10 pb-6 md:py-9 lg:py-30 md:text-5xl text-gray-600 tracking-wide">Hello World</h2>
-            <h3 className="text-xl md:text-2xl pb-3 text-gray-600 lg:px-80">I'm <strong>Marta Karaba</strong>, a web developer
-              who loves to create beautiful and functional things. <br />
-              <a href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank"
-                rel="noopener noreferrer" download className="text-sky-700 cursor-pointer underline">Download my resume</a></h3>
-          </div>
-          <div >
-            <Image src={marta}
-              alt="a photo of me"
-              className="w-60 h-60 mx-auto rounded-full relative overflow-hidden md:w-64 md:h-64 lg:w-80 lg:h-80" />
-          </div>
-          <div className="text-4xl flex justify-center gap-10 pt-10 text-sky-700">
-            <a href="https://github.com/martalexaa"
-              target="blank"
-              className="hover:animate-pulse"><FaGithubSquare /></a>
-            <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/"
-              target="blank"
-              className="hover:animate-pulse"><FaLinkedin /></a>
-            <a href="https://twitter.com/MartaKaraba"
-              target="blank"
-              className="hover:animate-pulse"><FaTwitterSquare /></a>
-            <a href="https://medium.com/@martaalexandramcsaikaraba"
-              target="blank"
-              className="hover:animate-pulse"><FaMedium /></a>
+        <section className="text-center w-full h-full pt-2" id="home">
+          <div className="text-center py-10 my-10 mt-20">
+            <div className="text-center">
+              <h3 className="text-4xl md:text-5xl pt-5 text-center text-gray-600 tracking-wide text-shadow">Hello World</h3>
+              <h3 className="text-xl py-10 text-gray-600 md:px-56 px-5">My name is <strong>Marta Karaba</strong>, I'm a web developer
+                who loves to create beautiful and functional things, and am ready to put my skills to the test, learn and grow. <br />
+                <a href="/files/Marta_Karaba_WebDev_CV.pdf" alt="Click here to download my CV in pdf format" target="_blank"
+                  rel="noopener noreferrer" download className="text-sky-700 cursor-pointer underline">Download my resume</a></h3>
+            </div>
+            <div >
+              <Image src={marta}
+                alt="a photo of me"
+                className="w-60 h-60 mx-auto rounded-full relative overflow-hidden md:w-64 md:h-64 lg:w-80 lg:h-80" />
+            </div>
+
+            <div className="text-4xl flex justify-center gap-10 pt-10 text-sky-700">
+              <a href="https://github.com/martalexaa"
+                target="blank"
+                className="hover:animate-pulse"><FaGithubSquare /></a>
+              <a href="https://www.linkedin.com/in/marta-karaba-a3610b240/"
+                target="blank"
+                className="hover:animate-pulse"><FaLinkedin /></a>
+              <a href="https://twitter.com/MartaKaraba"
+                target="blank"
+                className="hover:animate-pulse"><FaTwitterSquare /></a>
+              <a href="https://medium.com/@martaalexandramcsaikaraba"
+                target="blank"
+                className="hover:animate-pulse"><FaMedium /></a>
+            </div>
           </div>
         </section>
 
         <section id="about" className="">
           <div className="md:px-20 lg:px-72">
-            <h3 className="text-4xl md:text-5xl pb-5 pt-20 md:pb-10 text-center text-gray-600 tracking-wide">
+            <h3 className="text-4xl md:text-5xl pb-5 pt-20 md:pb-10 text-center text-gray-600 tracking-wide text-shadow">
               About</h3>
             <div className="text-gray-600 hidden">
               <p className="text-lg py-2 leading-8 text-justify">
@@ -92,32 +95,32 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="lg:flex gap-2 lg:px-20">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+          <div className="lg:flex gap-2 lg:px-20 ">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-white">
               <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdLaptopChromebook /></div>
               <h3 className="text-lg font-medium pt-8 pb-2  text-gray-600">
                 Certified in Full-Stack
               </h3>
-              <p className="py-2 text-justify text-gray-600">
+              <p className="py-2 text-justify text-gray-600 ">
                 I completed a six-month full-stack web development course with the help of a tutor and mentor.
                 This experience gave me a solid foundation in essential web technologies like HTML, CSS, and JavaScript, as well as the understanding of advanced tools like the MERN stack.
                 I also learned about agile methodology and practiced soft and technical skills during the course like problem solving and debugging.
                 Becoming a web developer has been an exciting journey that I truly enjoyed.
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-white">
               <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><MdOutlineWorkOutline /></div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-gray-600">
                 Transferable Skills
               </h3>
-              <p className="py-2 text-justify text-gray-600">
+              <p className="py-2 text-justify text-gray-600 bg-white">
                 As a freelance translator, I have honed my ability to meet deadlines and work independently, ensuring timely delivery of projects.
                 I have also gained valuable experience in customer service within the e-commerce industry, where I was part of a multinational team.
                 These roles have equipped me with skills such as communication, being accountable for my work,
                 paying attention to detail, exhibiting patience, and adopting a user-centric mindset.
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-white">
               <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><BsBook /></div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-gray-600">
                 Life-Long Learning
@@ -129,7 +132,7 @@ export default function Home() {
                 It also nurtures my creativity in finding innovative solutions to complex technical problems.
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-white">
               <div className="flex-1 m-auto w-fit text-4xl text-gray-600"><IoMdHeartEmpty /></div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-gray-600">
                 Passion for Front-End
@@ -178,7 +181,7 @@ export default function Home() {
 
         <section id="work" className="">
           <div className="text-center">
-            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pb-20 text-center text-gray-600 tracking-wide">Projects</h3>
+            <h3 className="text-4xl md:text-5xl pt-20 pb-5 md:pb-20 text-center text-gray-600 tracking-wide text-shadow">Projects</h3>
           </div>
           <div className="flex flex-col gap-2 py-2 lg:flex-row lg:flex-wrap text-gray-600 lg:px-20 pb-10 ">
 
@@ -295,7 +298,7 @@ export default function Home() {
         </section>
 
         <section id="contact">
-          <h3 className="text-4xl md:text-5xl pt-20 text-center text-gray-600 tracking-wide">Contact</h3>
+          <h3 className="text-4xl md:text-5xl pt-20 text-center text-gray-600 tracking-wide text-shadow">Contact</h3>
           <div className="p-30 text-center py-10">
             <h3 className="text-xl md:text-2xl pt-10 mt-10 pb-5  text-gray-600">Are you interested in working with me? Let's get in touch.</h3>
             <ul className="pt-20 mt-10 pb-10 md:text-xl text-gray-600">
