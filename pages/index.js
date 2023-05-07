@@ -35,8 +35,8 @@ export default function Home() {
       <Navbar />
       <main className="mx-2 md:mx-5 lg:mx-30">
 
-        <section className="text-center w-full h-full pt-2" id="home">
-          <div className="text-center py-10 my-10 mt-20">
+        <section className="text-center w-full h-full pt-5 lg:pt-16" id="home">
+          <div className="text-center py-10">
             <div className="text-center">
               <h3 className="text-4xl md:text-5xl pt-5 text-center text-gray-600 tracking-wide text-shadow">Hello World</h3>
               <h3 className="text-xl py-10 text-gray-600 md:px-56 px-5">My name is <strong>Marta Karaba</strong>, I'm a web developer
