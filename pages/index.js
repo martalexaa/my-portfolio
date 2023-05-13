@@ -39,7 +39,7 @@ export default function Home() {
         <section className="pt-40 md:pt-52 lg:pl-56 bg-gradient-to-r from-cyan-600 to-blue-600 text-white min-h-screen " id="home">
           <div>
             <p className="text-xl">My name is</p>
-            <p className="text-6xl md:text-7xl md:text-12xl tracking-widest myname">Marta Karaba.</p>
+            <p className="text-6xl md:text-8xl md:text-12xl tracking-widest myname">Marta Karaba.</p>
             <p className="text-xl">I'm a web developer based in Berlin.</p>
             <div className="mt-10">
               <Link to="contact" smooth={true} duration={500}
@@ -259,7 +259,7 @@ export default function Home() {
               <li className="pb-4">+49 1773271140</li>
             </ul>
           </div>
-          <div className="text-4xl flex justify-center gap-10 pt-10 mb-10">
+          <div className="text-4xl flex justify-center gap-10 py-10">
             <a href="https://github.com/martalexaa"
               target="blank"
               className="hover:animate-pulse"><FaGithubSquare /></a>
