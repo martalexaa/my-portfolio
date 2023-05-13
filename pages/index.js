@@ -35,12 +35,12 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"></link>
       </Head>
       <Navbar />
-      <main>
-        <section className="w-full h-full pt-40 md:pt-52 pl-5 lg:pl-56 bg-gradient-to-r from-cyan-600 to-blue-600 text-white min-h-screen" id="home">
+      <main className="max-w-screen">
+        <section className="pt-40 md:pt-52 lg:pl-56 bg-gradient-to-r from-cyan-600 to-blue-600 text-white min-h-screen " id="home">
           <div>
-            <p className="text-2xl">My name is</p>
-            <p className="text-8xl lg:text-12xl tracking-widest myname">Marta Karaba.</p>
-            <p className="text-2xl">I'm a web developer based in Berlin.</p>
+            <p className="text-xl">My name is</p>
+            <p className="text-6xl md:text-12xl tracking-widest myname">Marta Karaba.</p>
+            <p className="text-xl">I'm a web developer based in Berlin.</p>
             <div className="mt-10">
               <Link to="contact" smooth={true} duration={500}
                 className="text-white text-center cursor-pointer border-2 border-solid border-white hover:text-gray-300 hover:border-gray-300 px-1 text-xl mr-10">HIRE ME</Link>
@@ -62,9 +62,9 @@ export default function Home() {
                 target="blank"
                 className="hover:animate-pulse"><FaMedium /></a>
             </div>
-            <div className="">
-              <Image src={clipart} alt="clipart" className="absolute right-2 -z-1 float-right p-5" />
-            </div>
+          </div>
+          <div className="">
+            <Image src={clipart} alt="clipart" className="absolute right-2 -z-1 float-right p-5" />
           </div>
         </section>
 
@@ -73,9 +73,9 @@ export default function Home() {
             <div className="">
               <Image src={marta}
                 alt="a photo of me"
-                className="flex-1 w-60 h-60 mx-auto rounded-full relative overflow-hidden md:w-64 md:h-64 lg:w-80 lg:h-80 mt-20 md:mt-10" />
+                className="flex-1 w-60 h-60 mx-auto rounded-full relative overflow-hidden md:w-64 md:h-64 lg:w-80 lg:h-80" />
             </div>
-            <div className="text-center flex-1 bg-white p-10 mt-10">
+            <div className="text-center flex-1 bg-white mt-10 mx-2 text-lg">
               <p className="text-justify text-gray-600 ">
                 Becoming a web developer has been on my bucket list for a long time.
                 Finally, about eight months ago, I was able to devote all my time to studying web development with Careerfoundry's full-stack program.
@@ -253,7 +253,7 @@ export default function Home() {
         <section id="contact" className="pt-20 min-h-screen text-white bg-gradient-to-r from-cyan-600 to-blue-600">
           <div className="p-30 text-center py-10">
             <h3 className="text-3xl md:text-4xl pt-10 mt-10 pb-5 px-2">Are you interested in working with me? Let's get in touch.</h3>
-            <ul className="pt-20 mt-10 pb-10 md:text-xl ">
+            <ul className="pt-20 mt-10 pb-10 text-lg md:text-xl ">
               <li className="pb-4">martalexa@gmail.com</li>
               <li className="pb-4">Skype: live:martalexa_2</li>
               <li className="pb-4">+49 1773271140</li>
