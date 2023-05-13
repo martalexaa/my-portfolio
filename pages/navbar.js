@@ -11,7 +11,7 @@ const Navbar = () => {
     const [activeNavItem, setActiveNavItem] = useState("");
 
     return (
-        <nav className="w-full bg-gray-600 shadow top-0 z-10 fixed">
+        <nav className="w-full bg-black shadow top-0 z-10 fixed">
             <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -72,21 +72,21 @@ const Navbar = () => {
                             </div>
                             <div className="text-white cursor-pointer text-lg md:text-2xl p-3 hover:text-gray-200">
                                 <Link to="about" smooth={true} duration={500} onClick={() => setNavbar(false)}>
-                                    <div classname="mx-100 my-2">
+                                    <div className="mx-100 my-2">
                                         About
                                     </div>
                                 </Link>
                             </div>
                             <div className="text-white cursor-pointer text-lg md:text-2xl p-3 hover:text-gray-200">
                                 <Link to="work" smooth={true} duration={500} onClick={() => setNavbar(false)}>
-                                    <div classname="mx-100 my-2">
+                                    <div className="mx-100 my-2">
                                         Projects
                                     </div>
                                 </Link>
                             </div>
                             <div className="text-white cursor-pointer text-lg md:text-2xl p-3 hover:text-gray-200">
                                 <Link to="contact" smooth={true} duration={500} onClick={() => setNavbar(false)}>
-                                    <div classname="mx-100 my-2">
+                                    <div className="mx-100 my-2">
                                         Contact
                                     </div>
                                 </Link>

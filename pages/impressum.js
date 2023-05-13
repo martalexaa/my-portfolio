@@ -11,7 +11,7 @@ const Impressum = () => {
                 <p>
                     Mócsai-Karaba, Márta Alexandra
                     <br />
-                    Anna-Ebermann-Str. 18
+                    Anna-Ebermann-Str.
                     <br />
                     Berlin, 13053
                 </p>
