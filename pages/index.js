@@ -39,7 +39,7 @@ export default function Home() {
         <section className="pt-40 md:pt-52 lg:pl-56 bg-gradient-to-r from-cyan-600 to-blue-600 text-white min-h-screen " id="home">
           <div>
             <p className="text-xl">My name is</p>
-            <p className="text-6xl md:text-12xl tracking-widest myname">Marta Karaba.</p>
+            <p className="text-6xl md:text-7xl md:text-12xl tracking-widest myname">Marta Karaba.</p>
             <p className="text-xl">I'm a web developer based in Berlin.</p>
             <div className="mt-10">
               <Link to="contact" smooth={true} duration={500}
@@ -64,7 +64,7 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <Image src={clipart} alt="clipart" className="absolute right-2 -z-1 float-right p-5" />
+            <Image src={clipart} alt="clipart" className="absolute right-2 -z-1 float-right p-5 hidden lg:block" />
           </div>
         </section>
 
@@ -218,7 +218,7 @@ export default function Home() {
                 <div className="absolute bottom-0 left-0 right-0 top-0 px-4 py-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                   <p className="py-5 text-justify text-2xl md:text-4xl">Chat App | React Native</p>
                   <div className="flex justify-between gap-4 absolute bottom-3">
-                    <a href="https://martalexaa-movie-app.netlify.app/signup" target="blank"
+                    <a href="https://github.com/martalexaa/chat-app" target="blank"
                       className="text-white text-center cursor-pointer border-2 border-solid border-white px-1 text-xl">CODE</a>
 
                   </div>
