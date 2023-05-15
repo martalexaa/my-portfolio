@@ -37,18 +37,17 @@ export default function Home() {
       <Navbar />
       <main className="max-w-screen">
         <section className="pt-40 md:pt-52 lg:pl-56 bg-gradient-to-r from-cyan-600 to-blue-600 text-white min-h-screen " id="home">
-          <div>
+          <div className="text-center md:text-left">
             <p className="text-xl">My name is</p>
-            <p className="text-6xl md:text-8xl md:text-12xl tracking-widest myname">Marta Karaba.</p>
+            <p className="text-6xl md:text-8xl md:text-12xl tracking-widest myname font-bold drop-shadow-xl">Marta Karaba.</p>
             <p className="text-xl">I'm a web developer based in Berlin.</p>
-            <div className="mt-10">
+            <div className="mt-10 flex justify-center md:justify-start gap-10">
               <Link to="contact" smooth={true} duration={500}
-                className="text-white text-center cursor-pointer border-2 border-solid border-white hover:text-gray-300 hover:border-gray-300 px-1 text-xl mr-10">HIRE ME</Link>
+                className="text-white text-center cursor-pointer border-2 border-solid border-white hover:text-gray-300 hover:border-gray-300 px-1 text-xl">HIRE ME</Link>
               <Link to="work" smooth={true} duration={500}
-
-                className="text-white text-center cursor-pointer border-2 border-solid border-white hover:text-gray-300 hover:border-gray-300 px-1 text-xl mr-10">SEE MY WORKS</Link>
+                className="text-white text-center cursor-pointer border-2 border-solid border-white hover:text-gray-300 hover:border-gray-300 px-1 text-xl">SEE MY WORKS</Link>
             </div>
-            <div className="text-4xl flex gap-10 pt-10 text-white">
+            <div className="text-4xl flex gap-10 pt-10 text-white justify-center md:justify-start">
               <a href="https://github.com/martalexaa"
                 target="blank"
                 className="hover:animate-pulse"><FaGithubSquare /></a>
@@ -64,18 +63,18 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <Image src={clipart} alt="clipart" className="absolute right-2 -z-1 float-right p-5 hidden lg:block" />
+            <Image src={clipart} alt="clipart" className="absolute right-2 -z-1 float-right hidden lg:block" />
           </div>
         </section>
 
-        <section id="about" className="pt-40 min-h-screen">
+        <section id="about" className="pt-20 md:pt-40 min-h-screen">
           <div className="lg:flex gap-2 md:px-20 lg:px-52 ">
             <div className="">
               <Image src={marta}
                 alt="a photo of me"
                 className="flex-1 w-60 h-60 mx-auto rounded-full relative overflow-hidden md:w-64 md:h-64 lg:w-80 lg:h-80" />
             </div>
-            <div className="text-center flex-1 bg-white mt-10 mx-2 text-lg">
+            <div className="text-center flex-1 bg-white mt-10 mx-5 text-base md:text-lg">
               <p className="text-justify text-gray-600 ">
                 Becoming a web developer has been on my bucket list for a long time.
                 Finally, about eight months ago, I was able to devote all my time to studying web development with Careerfoundry's full-stack program.
@@ -145,6 +144,9 @@ export default function Home() {
                     <a href="https://github.com/martalexaa/myFlix-client"
                       target="blank"
                       className="text-white text-center cursor-pointer border-2 border-solid border-white px-1 text-xl ">CODE</a>
+                    <a href="/myflix_case_study"
+                      target="blank"
+                      className="text-white text-center cursor-pointer border-2 border-solid border-white px-1 text-xl">CASE STUDY</a>
 
                   </div>
                 </div>
@@ -240,9 +242,7 @@ export default function Home() {
                     <a href="https://github.com/martalexaa/movie_api"
                       target="blank"
                       className="text-white text-center cursor-pointer border-2 border-solid border-white px-1 text-xl ">CODE</a>
-                    <a href="/myflix_case_study"
-                      target="blank"
-                      className="text-white text-center cursor-pointer border-2 border-solid border-white px-1 text-xl">CASE STUDY</a>
+
                   </div>
                 </div>
               </div>
